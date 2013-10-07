@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
   s.name         = "GDFileManagerKit"
   s.version      = "0.0.1"
-  s.summary      = "A consistent iOS API to cloud file storage services including Dropbox and Google Drive."
+  s.summary      = "A consistent iOS API for cloud file storage services including Dropbox and Google Drive."
 
   s.description  = <<-DESC
                    GDFileManagerKit lets you access Dropbox, Google Drive, SugarSync and WebDAV with a consistent,
