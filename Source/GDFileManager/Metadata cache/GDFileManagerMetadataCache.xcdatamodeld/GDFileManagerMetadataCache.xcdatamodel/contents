@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="FileNode" representedClassName="GDCoreDataFileNode" syncable="YES">
+        <attribute name="root" optional="YES" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="urlString" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="children" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FileNode" inverseName="parents" inverseEntity="FileNode" syncable="YES"/>
+        <relationship name="metadata" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="Metadata" inverseName="fileNode" inverseEntity="Metadata" syncable="YES"/>
+        <relationship name="parents" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="FileNode" inverseName="children" inverseEntity="FileNode" syncable="YES"/>
+    </entity>
+    <entity name="Metadata" representedClassName="GDCoreDataMetadata" syncable="YES">
+        <attribute name="json" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="fileNode" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="FileNode" inverseName="metadata" inverseEntity="FileNode" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="FileNode" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="Metadata" positionX="160" positionY="192" width="128" height="75"/>
+    </elements>
+</model>

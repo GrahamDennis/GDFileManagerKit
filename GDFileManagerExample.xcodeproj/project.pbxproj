@@ -1,0 +1,1550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		BFBCD68B179785AF00305B86 /* mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BFBCD68C179785AF00305B86 /* Build configuration list for PBXAggregateTarget "mogenerator" */;
+			buildPhases = (
+				BFBCD68F179785B500305B86 /* mogenerator */,
+			);
+			dependencies = (
+			);
+			name = mogenerator;
+			productName = mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		A7D19A41923A4F15889827D0 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D3EB33CE8C46F48846FD59 /* libPods.a */; };
+		BF028B7F1778663C00843D0E /* GDGoogleDriveClientManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF028B7E1778663C00843D0E /* GDGoogleDriveClientManager.m */; };
+		BF028B82177866AC00843D0E /* GDOAuth2Credential.m in Sources */ = {isa = PBXBuildFile; fileRef = BF028B81177866AC00843D0E /* GDOAuth2Credential.m */; };
+		BF028B85177866CD00843D0E /* GDGoogleDriveAPIToken.m in Sources */ = {isa = PBXBuildFile; fileRef = BF028B84177866CD00843D0E /* GDGoogleDriveAPIToken.m */; };
+		BF028B8F1778748600843D0E /* GDGoogleDriveClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BF028B8E1778748600843D0E /* GDGoogleDriveClient.m */; };
+		BF028B9217787D2400843D0E /* GDGoogleDriveAccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BF028B9117787D2400843D0E /* GDGoogleDriveAccountInfo.m */; };
+		BF048E7616BBBB7F002549B2 /* WebDAVMetadataRequest.xml in Resources */ = {isa = PBXBuildFile; fileRef = BF048E7516BBBB7F002549B2 /* WebDAVMetadataRequest.xml */; };
+		BF087ACD16B60432000F1A9E /* GDSugarSyncAccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BF087ACC16B60432000F1A9E /* GDSugarSyncAccountInfo.m */; };
+		BF087AD016B604E3000F1A9E /* GDDictionaryBackedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BF087ACF16B604E3000F1A9E /* GDDictionaryBackedObject.m */; };
+		BF087AD616B66E7E000F1A9E /* GDSugarSyncMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = BF087AD516B66E7D000F1A9E /* GDSugarSyncMetadata.m */; };
+		BF087ADA16B72A3E000F1A9E /* GDSugarSyncFileService.m in Sources */ = {isa = PBXBuildFile; fileRef = BF087AD916B72A3E000F1A9E /* GDSugarSyncFileService.m */; };
+		BF087ADD16B72B2D000F1A9E /* GDSugarSyncFileServiceSession.m in Sources */ = {isa = PBXBuildFile; fileRef = BF087ADC16B72B2D000F1A9E /* GDSugarSyncFileServiceSession.m */; };
+		BF087AE016B72CD1000F1A9E /* GDSugarSyncURLMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = BF087ADF16B72CD1000F1A9E /* GDSugarSyncURLMetadata.m */; };
+		BF2006D916E2009B0082510E /* Dropbox.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2006D816E2009B0082510E /* Dropbox.png */; };
+		BF2006DB16E200A20082510E /* Dropbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF2006DA16E200A20082510E /* Dropbox@2x.png */; };
+		BF2006DE16E206C40082510E /* GDFileServiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2006DD16E206C40082510E /* GDFileServiceViewController.m */; };
+		BF2006E416E207F20082510E /* GDImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2006E316E207F20082510E /* GDImageCell.m */; };
+		BF2006E616E2254E0082510E /* GDImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF2006E516E2254E0082510E /* GDImageCell.xib */; };
+		BF22DEC617B3BEC200B18505 /* GDSugarSyncDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF22DEC517B3BEC200B18505 /* GDSugarSyncDownloadOperation.m */; };
+		BF2985E917CB424D0030C53E /* GDLocalURLMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2985E817CB424D0030C53E /* GDLocalURLMetadata.m */; };
+		BF2985EC17CB46470030C53E /* GDLocalFileService.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2985EB17CB46470030C53E /* GDLocalFileService.m */; };
+		BF2985EF17CB477E0030C53E /* GDLocalFileServiceSession.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2985EE17CB477E0030C53E /* GDLocalFileServiceSession.m */; };
+		BF29898316AA9860007A444F /* GDSugarSyncAPIToken.m in Sources */ = {isa = PBXBuildFile; fileRef = BF29898216AA9860007A444F /* GDSugarSyncAPIToken.m */; };
+		BF2AD8B817B914A100EF42A2 /* GDWebDAVUploadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2AD8B717B914A100EF42A2 /* GDWebDAVUploadOperation.m */; };
+		BF2E2E1D16A664C4004A5DB1 /* GDRetainingMetadataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2E2E1C16A664C4004A5DB1 /* GDRetainingMetadataCache.m */; };
+		BF2E8C2D17ACE79C00901951 /* GDDropboxUploadState.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2E8C2C17ACE79C00901951 /* GDDropboxUploadState.m */; };
+		BF38B584169BD56600EEA24D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF38B583169BD56600EEA24D /* UIKit.framework */; };
+		BF38B586169BD56600EEA24D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF38B585169BD56600EEA24D /* Foundation.framework */; };
+		BF38B588169BD56600EEA24D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF38B587169BD56600EEA24D /* CoreGraphics.framework */; };
+		BF38B58E169BD56600EEA24D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF38B58C169BD56600EEA24D /* InfoPlist.strings */; };
+		BF38B590169BD56600EEA24D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BF38B58F169BD56600EEA24D /* main.m */; };
+		BF38B594169BD56600EEA24D /* GDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF38B593169BD56600EEA24D /* GDAppDelegate.m */; };
+		BF38B596169BD56600EEA24D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BF38B595169BD56600EEA24D /* Default.png */; };
+		BF38B598169BD56600EEA24D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF38B597169BD56600EEA24D /* Default@2x.png */; };
+		BF38B59A169BD56600EEA24D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF38B599169BD56600EEA24D /* Default-568h@2x.png */; };
+		BF38B59D169BD56600EEA24D /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF38B59B169BD56600EEA24D /* MainStoryboard_iPhone.storyboard */; };
+		BF38B5A0169BD56600EEA24D /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF38B59E169BD56600EEA24D /* MainStoryboard_iPad.storyboard */; };
+		BF38B5A3169BD56600EEA24D /* GDMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF38B5A2169BD56600EEA24D /* GDMasterViewController.m */; };
+		BF38B5A6169BD56600EEA24D /* GDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF38B5A5169BD56600EEA24D /* GDDetailViewController.m */; };
+		BF39FAD2176454CD0027358D /* GDWebLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF39FAD0176454CD0027358D /* GDWebLoginViewController.m */; };
+		BF3B626D17708EE6008FB4D3 /* GDWebLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3B626C17708EE6008FB4D3 /* GDWebLoginController.m */; };
+		BF3FFDF217D31DF400C74DB7 /* GDFileListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FFDF117D31DF400C74DB7 /* GDFileListViewController.m */; };
+		BF3FFDF417D322B400C74DB7 /* GDMasterViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3FFDF317D322B400C74DB7 /* GDMasterViewController.storyboard */; };
+		BF3FFDF717D3402600C74DB7 /* GDFileManagerResourceBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3FFDF617D3402600C74DB7 /* GDFileManagerResourceBundle.m */; };
+		BF400D5D1771E555002ECE29 /* GDWebLoginControllerDefaultDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BF400D5C1771E555002ECE29 /* GDWebLoginControllerDefaultDelegate.m */; };
+		BF400D5F1771E8B5002ECE29 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF400D5E1771E8B5002ECE29 /* QuartzCore.framework */; };
+		BF474C78177C60F400BDAE73 /* GDGoogleDriveChange.m in Sources */ = {isa = PBXBuildFile; fileRef = BF474C77177C60F400BDAE73 /* GDGoogleDriveChange.m */; };
+		BF474C80177E8FBB00BDAE73 /* GDGoogleDriveURLMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = BF474C7F177E8FBB00BDAE73 /* GDGoogleDriveURLMetadata.m */; };
+		BF474C83177E9CD700BDAE73 /* GDGoogleDriveFileService.m in Sources */ = {isa = PBXBuildFile; fileRef = BF474C82177E9CD700BDAE73 /* GDGoogleDriveFileService.m */; };
+		BF474C86177E9D7200BDAE73 /* GDGoogleDriveFileServiceSession.m in Sources */ = {isa = PBXBuildFile; fileRef = BF474C85177E9D7200BDAE73 /* GDGoogleDriveFileServiceSession.m */; };
+		BF54567A16B337ED005E4715 /* GDFileServiceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF54567916B337ED005E4715 /* GDFileServiceManager.m */; };
+		BF54567F16B33C63005E4715 /* GDFileService.m in Sources */ = {isa = PBXBuildFile; fileRef = BF54567E16B33C63005E4715 /* GDFileService.m */; };
+		BF54568216B343A0005E4715 /* GDFileServiceSession.m in Sources */ = {isa = PBXBuildFile; fileRef = BF54568116B343A0005E4715 /* GDFileServiceSession.m */; };
+		BF54569716B34626005E4715 /* GDDropboxFileService.m in Sources */ = {isa = PBXBuildFile; fileRef = BF54569616B34626005E4715 /* GDDropboxFileService.m */; };
+		BF54569A16B36517005E4715 /* GDRemoteFileService.m in Sources */ = {isa = PBXBuildFile; fileRef = BF54569916B36517005E4715 /* GDRemoteFileService.m */; };
+		BF5456AE16B37B78005E4715 /* GDClientCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5456AD16B37B78005E4715 /* GDClientCredential.m */; };
+		BF5456B916B3A3DE005E4715 /* GDHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5456B816B3A3DD005E4715 /* GDHTTPClient.m */; };
+		BF596B291774379D00C0C58B /* GDURLUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BF596B281774379D00C0C58B /* GDURLUtilities.m */; };
+		BF5D4AFE169EB6AD005E896E /* GDFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5D4AFD169EB6AD005E896E /* GDFileManager.m */; };
+		BF5D4B3C169F995E005E896E /* GDAPIToken.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5D4B3B169F995E005E896E /* GDAPIToken.m */; };
+		BF5D4BC916A26551005E896E /* GDDropboxURLMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5D4BC816A26551005E896E /* GDDropboxURLMetadata.m */; };
+		BF5EBC1C16BB4F4800421884 /* GDWebDAVCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5EBC1B16BB4F4800421884 /* GDWebDAVCredential.m */; };
+		BF5EBC2016BB510000421884 /* GDWebDAVClientManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5EBC1F16BB510000421884 /* GDWebDAVClientManager.m */; };
+		BF5EBC2316BB52E400421884 /* GDWebDAVClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5EBC2216BB52E400421884 /* GDWebDAVClient.m */; };
+		BF6449CD17C48BB6002723A2 /* AFHTTPRequestOperation+GDFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6449CC17C48BB6002723A2 /* AFHTTPRequestOperation+GDFileManager.m */; };
+		BF6449D017C49F5C002723A2 /* GDFileManagerAlias.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6449CF17C49F5C002723A2 /* GDFileManagerAlias.m */; };
+		BF65BD4016AB5DB700B94AEF /* SugarSyncRefreshTokenRequest.xml in Resources */ = {isa = PBXBuildFile; fileRef = BF65BD3F16AB5DB700B94AEF /* SugarSyncRefreshTokenRequest.xml */; };
+		BF65BD4216AB7E4E00B94AEF /* SugarSyncAccessTokenRequest.xml in Resources */ = {isa = PBXBuildFile; fileRef = BF65BD4116AB7E4E00B94AEF /* SugarSyncAccessTokenRequest.xml */; };
+		BF66E59816D36C6B00A4455D /* GDLoginFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF66E59716D36C6B00A4455D /* GDLoginFormViewController.m */; };
+		BF66E59A16D370C200A4455D /* SugarSyncLoginForm.json in Resources */ = {isa = PBXBuildFile; fileRef = BF66E59916D370C200A4455D /* SugarSyncLoginForm.json */; };
+		BF66E59D16D3756700A4455D /* SugarSync.png in Resources */ = {isa = PBXBuildFile; fileRef = BF66E59B16D3756700A4455D /* SugarSync.png */; };
+		BF66E59E16D3756700A4455D /* SugarSync@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF66E59C16D3756700A4455D /* SugarSync@2x.png */; };
+		BF6D139616BA3ABD001CD0EE /* FileBrowser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6D139516BA3ABD001CD0EE /* FileBrowser.storyboard */; };
+		BF6D139916BA3AEA001CD0EE /* GDFileServiceSessionListController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6D139816BA3AEA001CD0EE /* GDFileServiceSessionListController.m */; };
+		BF6FE4911791308C006E8DE9 /* GDFileServiceManager+AutoRegistration.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6FE4901791308C006E8DE9 /* GDFileServiceManager+AutoRegistration.m */; };
+		BF6FE49617940519006E8DE9 /* GDAbstractMetadataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BF6FE49517940519006E8DE9 /* GDAbstractMetadataCache.m */; };
+		BF703E2017AFCBC000978241 /* GDFileManagerCachedDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF703E1F17AFCBC000978241 /* GDFileManagerCachedDownloadOperation.m */; };
+		BF703E2717B0683A00978241 /* SugarSyncCreateFileRequest.xml in Resources */ = {isa = PBXBuildFile; fileRef = BF703E2617B0683A00978241 /* SugarSyncCreateFileRequest.xml */; };
+		BF703E2B17B0D18600978241 /* GDSugarSyncUploadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF703E2A17B0D18600978241 /* GDSugarSyncUploadOperation.m */; };
+		BF703E2E17B0D28000978241 /* GDSugarSyncUploadState.m in Sources */ = {isa = PBXBuildFile; fileRef = BF703E2D17B0D28000978241 /* GDSugarSyncUploadState.m */; };
+		BF74AA9917ECCCC900E44DB3 /* dropbox-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF74AA9717ECCCC900E44DB3 /* dropbox-icon.png */; };
+		BF74AA9A17ECCCC900E44DB3 /* dropbox-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF74AA9817ECCCC900E44DB3 /* dropbox-icon@2x.png */; };
+		BF74AA9D17ECCCDF00E44DB3 /* sugarsync-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF74AA9B17ECCCDF00E44DB3 /* sugarsync-icon.png */; };
+		BF74AA9E17ECCCDF00E44DB3 /* sugarsync-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF74AA9C17ECCCDF00E44DB3 /* sugarsync-icon@2x.png */; };
+		BF74AAA117ECCCEF00E44DB3 /* webdav-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF74AA9F17ECCCEF00E44DB3 /* webdav-icon.png */; };
+		BF74AAA217ECCCEF00E44DB3 /* webdav-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF74AAA017ECCCEF00E44DB3 /* webdav-icon@2x.png */; };
+		BF74AAA517ECCCFF00E44DB3 /* google-drive-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF74AAA317ECCCFF00E44DB3 /* google-drive-icon.png */; };
+		BF74AAA617ECCCFF00E44DB3 /* google-drive-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF74AAA417ECCCFF00E44DB3 /* google-drive-icon@2x.png */; };
+		BF74AAA917ECEA0400E44DB3 /* local-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BF74AAA717ECEA0400E44DB3 /* local-icon.png */; };
+		BF74AAAA17ECEA0400E44DB3 /* local-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF74AAA817ECEA0400E44DB3 /* local-icon@2x.png */; };
+		BF76EA3317AA4A850088F110 /* GDFileManagerDataCache.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BF76EA3117AA4A850088F110 /* GDFileManagerDataCache.xcdatamodeld */; };
+		BF76EA3717AA4DD40088F110 /* _GDFileManagerCachedFile.m in Sources */ = {isa = PBXBuildFile; fileRef = BF76EA3617AA4DD40088F110 /* _GDFileManagerCachedFile.m */; };
+		BF76EA3B17AA4E0E0088F110 /* GDFileManagerCachedFile.m in Sources */ = {isa = PBXBuildFile; fileRef = BF76EA3A17AA4E0E0088F110 /* GDFileManagerCachedFile.m */; };
+		BF76EA3E17AA4F210088F110 /* GDFileManagerDataCacheCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = BF76EA3D17AA4F210088F110 /* GDFileManagerDataCacheCoordinator.m */; };
+		BF7A3D0617B604C600BB6C0F /* GDGoogleDriveChunkedUploadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7A3D0517B604C600BB6C0F /* GDGoogleDriveChunkedUploadOperation.m */; };
+		BF7A3D0917B60BF400BB6C0F /* GDGoogleDriveUploadState.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7A3D0817B60BF400BB6C0F /* GDGoogleDriveUploadState.m */; };
+		BF7F567617C03B6400D977B8 /* GDFileManagerDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7F567517C03B6400D977B8 /* GDFileManagerDownloadOperation.m */; };
+		BF7F567D17C0526800D977B8 /* GDFileManagerUploadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7F567C17C0526800D977B8 /* GDFileManagerUploadOperation.m */; };
+		BF7F568117C0A10300D977B8 /* GDFileManagerPersistentUploadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7F568017C0A10300D977B8 /* GDFileManagerPersistentUploadOperation.m */; };
+		BF7F568517C0A40900D977B8 /* _GDFileManagerPendingUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7F568417C0A40900D977B8 /* _GDFileManagerPendingUpload.m */; };
+		BF7F568817C0A41600D977B8 /* GDFileManagerPendingUpload.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7F568717C0A41600D977B8 /* GDFileManagerPendingUpload.m */; };
+		BF7F568B17C0A49F00D977B8 /* GDPersistentUploadDestination.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7F568A17C0A49F00D977B8 /* GDPersistentUploadDestination.m */; };
+		BF816F03179625B000D22F81 /* GDURLMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = BF816F02179625B000D22F81 /* GDURLMetadata.m */; };
+		BF8375701780405B0055ACF4 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF83756F1780405B0055ACF4 /* QuickLook.framework */; };
+		BF83757C178573CE0055ACF4 /* GDHTTPOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BF83757B178573CD0055ACF4 /* GDHTTPOperation.m */; };
+		BF83757F1785A45D0055ACF4 /* GDAccessTokenClientCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = BF83757E1785A45C0055ACF4 /* GDAccessTokenClientCredential.m */; };
+		BF849CB4169D19E10068B57E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF849CB3169D19E10068B57E /* SystemConfiguration.framework */; };
+		BF849CB6169D19E90068B57E /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF849CB5169D19E90068B57E /* MobileCoreServices.framework */; };
+		BF9A73A71802D07000E1E8A2 /* FileToUpload.txt in Resources */ = {isa = PBXBuildFile; fileRef = BF9A73A61802D07000E1E8A2 /* FileToUpload.txt */; };
+		BFA7309F1787E16A00DBD673 /* GDParentOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA7309E1787E16A00DBD673 /* GDParentOperation.m */; };
+		BFA9891B17B770CB000B78F4 /* GDFileManagerUploadState.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA9891A17B770CA000B78F4 /* GDFileManagerUploadState.m */; };
+		BFABDF71177A8CAF005CA7EE /* GDGoogleDriveMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = BFABDF70177A8CAF005CA7EE /* GDGoogleDriveMetadata.m */; };
+		BFB5B50416B506210049B1F8 /* GDRemoteFileServiceSession.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB5B50316B506210049B1F8 /* GDRemoteFileServiceSession.m */; };
+		BFB7ED0E178ED2D5003DEE44 /* GDCredentialManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB7ED0D178ED2D5003DEE44 /* GDCredentialManager.m */; };
+		BFB7ED12178EE284003DEE44 /* GDKeychainCredentialManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFB7ED11178EE283003DEE44 /* GDKeychainCredentialManager.m */; };
+		BFBA948717ADD898008265DB /* GDDropboxChunkedUploadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBA948617ADD898008265DB /* GDDropboxChunkedUploadOperation.m */; };
+		BFBCD68417977ABD00305B86 /* GDCoreDataMetadataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBCD68317977ABD00305B86 /* GDCoreDataMetadataCache.m */; };
+		BFBCD68717977ADE00305B86 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBCD68617977ADE00305B86 /* CoreData.framework */; };
+		BFBCD68A17977D6D00305B86 /* GDFileManagerMetadataCache.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BFBCD68817977D6D00305B86 /* GDFileManagerMetadataCache.xcdatamodeld */; };
+		BFBCD6951797870300305B86 /* GDCoreDataFileNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBCD6921797870300305B86 /* GDCoreDataFileNode.m */; };
+		BFBCD6961797870300305B86 /* GDCoreDataMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBCD6941797870300305B86 /* GDCoreDataMetadata.m */; };
+		BFBCD69C1797871600305B86 /* _GDCoreDataFileNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBCD6991797871600305B86 /* _GDCoreDataFileNode.m */; };
+		BFBCD69D1797871600305B86 /* _GDCoreDataMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBCD69B1797871600305B86 /* _GDCoreDataMetadata.m */; };
+		BFBDD27D16B1EC6C005AF6DE /* GDDropboxAPIToken.m in Sources */ = {isa = PBXBuildFile; fileRef = BFBDD27C16B1EC6C005AF6DE /* GDDropboxAPIToken.m */; };
+		BFC2FED416BFABB900A1041F /* GDWebDAVURLMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2FED316BFABB900A1041F /* GDWebDAVURLMetadata.m */; };
+		BFC2FED716BFC88500A1041F /* GDWebDAVFileService.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2FED616BFC88500A1041F /* GDWebDAVFileService.m */; };
+		BFC2FEDD16C06D5200A1041F /* GDWebDAVFileServiceSession.m in Sources */ = {isa = PBXBuildFile; fileRef = BFC2FEDC16C06D5200A1041F /* GDWebDAVFileServiceSession.m */; };
+		BFCA229B16B509710015B1BF /* GDDropboxFileServiceSession.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCA229A16B509710015B1BF /* GDDropboxFileServiceSession.m */; };
+		BFCA22A916B5218F0015B1BF /* GDSugarSyncCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCA22A816B5218F0015B1BF /* GDSugarSyncCredential.m */; };
+		BFCA22AC16B523F10015B1BF /* GDSugarSyncClientManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCA22AB16B523F10015B1BF /* GDSugarSyncClientManager.m */; };
+		BFCA22B116B5259C0015B1BF /* GDSugarSyncClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCA22B016B5259C0015B1BF /* GDSugarSyncClient.m */; };
+		BFCC67A71793D37100C4B701 /* GDFileTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCC67A61793D37100C4B701 /* GDFileTreeNode.m */; };
+		BFCC67AA1793D9EF00C4B701 /* GDDiscardingMetadataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BFCC67A91793D9EF00C4B701 /* GDDiscardingMetadataCache.m */; };
+		BFD22F0316AF873500BC5CB8 /* GDDropboxClient.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD22F0216AF873500BC5CB8 /* GDDropboxClient.m */; };
+		BFD22F0716AF89CD00BC5CB8 /* GDClientManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD22F0616AF89CD00BC5CB8 /* GDClientManager.m */; };
+		BFD22F0A16AF89DF00BC5CB8 /* GDDropboxClientManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD22F0916AF89DF00BC5CB8 /* GDDropboxClientManager.m */; };
+		BFD22F0D16AF8E0800BC5CB8 /* GDDropboxCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD22F0C16AF8E0800BC5CB8 /* GDDropboxCredential.m */; };
+		BFD22F1316AFA3BE00BC5CB8 /* GDDropboxAccountInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD22F1216AFA3BE00BC5CB8 /* GDDropboxAccountInfo.m */; };
+		BFD22F1716AFB3EF00BC5CB8 /* GDDropboxMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD22F1616AFB3EF00BC5CB8 /* GDDropboxMetadata.m */; };
+		BFE13B9617E4F0CE008F7ABC /* GDMultiMap.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE13B9517E4F0CE008F7ABC /* GDMultiMap.m */; };
+		BFE8498D17D2FEE100216B3E /* AsyncSequentialEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE8498B17D2FEE100216B3E /* AsyncSequentialEnumeration.m */; };
+		BFE8499017D2FF6000216B3E /* GDKeyboardDismissingNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFE8498F17D2FF6000216B3E /* GDKeyboardDismissingNavigationController.m */; };
+		BFE8499317D3020800216B3E /* GoogleDrive.png in Resources */ = {isa = PBXBuildFile; fileRef = BFE8499117D3020800216B3E /* GoogleDrive.png */; };
+		BFE8499417D3020800216B3E /* GoogleDrive@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFE8499217D3020800216B3E /* GoogleDrive@2x.png */; };
+		BFE9D1FD17C9E4F90027E536 /* SugarSyncCopyFileRequest.xml in Resources */ = {isa = PBXBuildFile; fileRef = BFE9D1FC17C9E4F90027E536 /* SugarSyncCopyFileRequest.xml */; };
+		BFEBCDD116BB7F3A00F628B1 /* GDWebDAVMetadata.m in Sources */ = {isa = PBXBuildFile; fileRef = BFEBCDD016BB7F3A00F628B1 /* GDWebDAVMetadata.m */; };
+		BFEC9BBE16D398390045E77C /* WebDAVServerForm.json in Resources */ = {isa = PBXBuildFile; fileRef = BFEC9BBD16D398390045E77C /* WebDAVServerForm.json */; };
+		BFEC9BC116D3A2B50045E77C /* WebDAV.png in Resources */ = {isa = PBXBuildFile; fileRef = BFEC9BBF16D3A2B50045E77C /* WebDAV.png */; };
+		BFEC9BC216D3A2B50045E77C /* WebDAV@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFEC9BC016D3A2B50045E77C /* WebDAV@2x.png */; };
+		BFF7C19316A78A26004E97F6 /* GDLayeredMetadataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF7C19216A78A26004E97F6 /* GDLayeredMetadataCache.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BF028B79177865D100843D0E /* GDGoogleDrive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDGoogleDrive.h; sourceTree = "<group>"; };
+		BF028B7D1778663C00843D0E /* GDGoogleDriveClientManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDGoogleDriveClientManager.h; sourceTree = "<group>"; };
+		BF028B7E1778663C00843D0E /* GDGoogleDriveClientManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDGoogleDriveClientManager.m; sourceTree = "<group>"; };
+		BF028B80177866AC00843D0E /* GDOAuth2Credential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDOAuth2Credential.h; sourceTree = "<group>"; };
+		BF028B81177866AC00843D0E /* GDOAuth2Credential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDOAuth2Credential.m; sourceTree = "<group>"; };
+		BF028B83177866CD00843D0E /* GDGoogleDriveAPIToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDGoogleDriveAPIToken.h; sourceTree = "<group>"; };
+		BF028B84177866CD00843D0E /* GDGoogleDriveAPIToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDGoogleDriveAPIToken.m; sourceTree = "<group>"; };
+		BF028B8D1778748600843D0E /* GDGoogleDriveClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDGoogleDriveClient.h; sourceTree = "<group>"; };
+		BF028B8E1778748600843D0E /* GDGoogleDriveClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDGoogleDriveClient.m; sourceTree = "<group>"; };
+		BF028B9017787D2400843D0E /* GDGoogleDriveAccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDGoogleDriveAccountInfo.h; sourceTree = "<group>"; };
+		BF028B9117787D2400843D0E /* GDGoogleDriveAccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDGoogleDriveAccountInfo.m; sourceTree = "<group>"; };
+		BF048E7516BBBB7F002549B2 /* WebDAVMetadataRequest.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = WebDAVMetadataRequest.xml; sourceTree = "<group>"; };
+		BF087ACB16B60432000F1A9E /* GDSugarSyncAccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSugarSyncAccountInfo.h; sourceTree = "<group>"; };
+		BF087ACC16B60432000F1A9E /* GDSugarSyncAccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDSugarSyncAccountInfo.m; sourceTree = "<group>"; };
+		BF087ACE16B604E3000F1A9E /* GDDictionaryBackedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDDictionaryBackedObject.h; sourceTree = "<group>"; };
+		BF087ACF16B604E3000F1A9E /* GDDictionaryBackedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDDictionaryBackedObject.m; sourceTree = "<group>"; };
+		BF087AD416B66E7D000F1A9E /* GDSugarSyncMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSugarSyncMetadata.h; sourceTree = "<group>"; };
+		BF087AD516B66E7D000F1A9E /* GDSugarSyncMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDSugarSyncMetadata.m; sourceTree = "<group>"; };
+		BF087AD816B72A3E000F1A9E /* GDSugarSyncFileService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSugarSyncFileService.h; sourceTree = "<group>"; };
+		BF087AD916B72A3E000F1A9E /* GDSugarSyncFileService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDSugarSyncFileService.m; sourceTree = "<group>"; };
+		BF087ADB16B72B2D000F1A9E /* GDSugarSyncFileServiceSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSugarSyncFileServiceSession.h; sourceTree = "<group>"; };
+		BF087ADC16B72B2D000F1A9E /* GDSugarSyncFileServiceSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDSugarSyncFileServiceSession.m; sourceTree = "<group>"; };
+		BF087ADE16B72CD0000F1A9E /* GDSugarSyncURLMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSugarSyncURLMetadata.h; sourceTree = "<group>"; };
+		BF087ADF16B72CD1000F1A9E /* GDSugarSyncURLMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDSugarSyncURLMetadata.m; sourceTree = "<group>"; };
+		BF16BA3217B3CD4E0003C830 /* GDSugarSyncURLMetadata_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDSugarSyncURLMetadata_Private.h; sourceTree = "<group>"; };
+		BF2006D816E2009B0082510E /* Dropbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Dropbox.png; sourceTree = "<group>"; };
+		BF2006DA16E200A20082510E /* Dropbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Dropbox@2x.png"; sourceTree = "<group>"; };
+		BF2006DC16E206C40082510E /* GDFileServiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDFileServiceViewController.h; sourceTree = "<group>"; };
+		BF2006DD16E206C40082510E /* GDFileServiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDFileServiceViewController.m; sourceTree = "<group>"; };
+		BF2006E216E207F20082510E /* GDImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDImageCell.h; sourceTree = "<group>"; };
+		BF2006E316E207F20082510E /* GDImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDImageCell.m; sourceTree = "<group>"; };
+		BF2006E516E2254E0082510E /* GDImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GDImageCell.xib; sourceTree = "<group>"; };
+		BF22DEC417B3BEC200B18505 /* GDSugarSyncDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSugarSyncDownloadOperation.h; sourceTree = "<group>"; };
+		BF22DEC517B3BEC200B18505 /* GDSugarSyncDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDSugarSyncDownloadOperation.m; sourceTree = "<group>"; };
+		BF2985E717CB424D0030C53E /* GDLocalURLMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDLocalURLMetadata.h; sourceTree = "<group>"; };
+		BF2985E817CB424D0030C53E /* GDLocalURLMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDLocalURLMetadata.m; sourceTree = "<group>"; };
+		BF2985EA17CB46470030C53E /* GDLocalFileService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDLocalFileService.h; sourceTree = "<group>"; };
+		BF2985EB17CB46470030C53E /* GDLocalFileService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDLocalFileService.m; sourceTree = "<group>"; };
+		BF2985ED17CB477E0030C53E /* GDLocalFileServiceSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDLocalFileServiceSession.h; sourceTree = "<group>"; };
+		BF2985EE17CB477E0030C53E /* GDLocalFileServiceSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDLocalFileServiceSession.m; sourceTree = "<group>"; };
+		BF29898116AA9860007A444F /* GDSugarSyncAPIToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSugarSyncAPIToken.h; sourceTree = "<group>"; };
+		BF29898216AA9860007A444F /* GDSugarSyncAPIToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDSugarSyncAPIToken.m; sourceTree = "<group>"; };
+		BF2AD8B617B914A100EF42A2 /* GDWebDAVUploadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDWebDAVUploadOperation.h; sourceTree = "<group>"; };
+		BF2AD8B717B914A100EF42A2 /* GDWebDAVUploadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDWebDAVUploadOperation.m; sourceTree = "<group>"; };
+		BF2E2E1B16A664C4004A5DB1 /* GDRetainingMetadataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDRetainingMetadataCache.h; sourceTree = "<group>"; };
+		BF2E2E1C16A664C4004A5DB1 /* GDRetainingMetadataCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDRetainingMetadataCache.m; sourceTree = "<group>"; };
+		BF2E8C2B17ACE79C00901951 /* GDDropboxUploadState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDDropboxUploadState.h; sourceTree = "<group>"; };
+		BF2E8C2C17ACE79C00901951 /* GDDropboxUploadState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDDropboxUploadState.m; sourceTree = "<group>"; };
+		BF38B57F169BD56600EEA24D /* GDFileManagerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GDFileManagerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF38B583169BD56600EEA24D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BF38B585169BD56600EEA24D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BF38B587169BD56600EEA24D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BF38B58B169BD56600EEA24D /* GDFileManagerExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GDFileManagerExample-Info.plist"; sourceTree = "<group>"; };
+		BF38B58D169BD56600EEA24D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF38B58F169BD56600EEA24D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BF38B591169BD56600EEA24D /* GDFileManagerExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GDFileManagerExample-Prefix.pch"; sourceTree = "<group>"; };
+		BF38B592169BD56600EEA24D /* GDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDAppDelegate.h; sourceTree = "<group>"; };
+		BF38B593169BD56600EEA24D /* GDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDAppDelegate.m; sourceTree = "<group>"; };
+		BF38B595169BD56600EEA24D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BF38B597169BD56600EEA24D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		BF38B599169BD56600EEA24D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BF38B59C169BD56600EEA24D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		BF38B59F169BD56600EEA24D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		BF38B5A1169BD56600EEA24D /* GDMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDMasterViewController.h; sourceTree = "<group>"; };
+		BF38B5A2169BD56600EEA24D /* GDMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDMasterViewController.m; sourceTree = "<group>"; };
+		BF38B5A4169BD56600EEA24D /* GDDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDDetailViewController.h; sourceTree = "<group>"; };
+		BF38B5A5169BD56600EEA24D /* GDDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDDetailViewController.m; sourceTree = "<group>"; };
+		BF38B5AD169BD56600EEA24D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		BF39FACF176454CD0027358D /* GDWebLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDWebLoginViewController.h; sourceTree = "<group>"; };
+		BF39FAD0176454CD0027358D /* GDWebLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDWebLoginViewController.m; sourceTree = "<group>"; };
+		BF3B626B17708EE6008FB4D3 /* GDWebLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDWebLoginController.h; sourceTree = "<group>"; };
+		BF3B626C17708EE6008FB4D3 /* GDWebLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDWebLoginController.m; sourceTree = "<group>"; };
+		BF3B626E177090C5008FB4D3 /* GDWebLoginController_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDWebLoginController_Private.h; sourceTree = "<group>"; };
+		BF3FFDA217D3050E00C74DB7 /* GDFileManagerKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GDFileManagerKit.h; path = Source/GDFileManagerKit.h; sourceTree = "<group>"; };
+		BF3FFDF017D31DF400C74DB7 /* GDFileListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDFileListViewController.h; sourceTree = "<group>"; };
+		BF3FFDF117D31DF400C74DB7 /* GDFileListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDFileListViewController.m; sourceTree = "<group>"; };
+		BF3FFDF317D322B400C74DB7 /* GDMasterViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GDMasterViewController.storyboard; sourceTree = "<group>"; };
+		BF3FFDF517D3402600C74DB7 /* GDFileManagerResourceBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDFileManagerResourceBundle.h; path = Source/GDFileManagerResourceBundle.h; sourceTree = "<group>"; };
+		BF3FFDF617D3402600C74DB7 /* GDFileManagerResourceBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDFileManagerResourceBundle.m; path = Source/GDFileManagerResourceBundle.m; sourceTree = "<group>"; };
+		BF400D5B1771E555002ECE29 /* GDWebLoginControllerDefaultDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDWebLoginControllerDefaultDelegate.h; sourceTree = "<group>"; };
+		BF400D5C1771E555002ECE29 /* GDWebLoginControllerDefaultDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDWebLoginControllerDefaultDelegate.m; sourceTree = "<group>"; };
+		BF400D5E1771E8B5002ECE29 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BF474C76177C60F400BDAE73 /* GDGoogleDriveChange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDGoogleDriveChange.h; sourceTree = "<group>"; };
+		BF474C77177C60F400BDAE73 /* GDGoogleDriveChange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDGoogleDriveChange.m; sourceTree = "<group>"; };
+		BF474C7E177E8FBB00BDAE73 /* GDGoogleDriveURLMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDGoogleDriveURLMetadata.h; sourceTree = "<group>"; };
+		BF474C7F177E8FBB00BDAE73 /* GDGoogleDriveURLMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDGoogleDriveURLMetadata.m; sourceTree = "<group>"; };
+		BF474C81177E9CD700BDAE73 /* GDGoogleDriveFileService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDGoogleDriveFileService.h; sourceTree = "<group>"; };
+		BF474C82177E9CD700BDAE73 /* GDGoogleDriveFileService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDGoogleDriveFileService.m; sourceTree = "<group>"; };
+		BF474C84177E9D7200BDAE73 /* GDGoogleDriveFileServiceSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDGoogleDriveFileServiceSession.h; sourceTree = "<group>"; };
+		BF474C85177E9D7200BDAE73 /* GDGoogleDriveFileServiceSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDGoogleDriveFileServiceSession.m; sourceTree = "<group>"; };
+		BF54567816B337ED005E4715 /* GDFileServiceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDFileServiceManager.h; sourceTree = "<group>"; };
+		BF54567916B337ED005E4715 /* GDFileServiceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDFileServiceManager.m; sourceTree = "<group>"; };
+		BF54567D16B33C63005E4715 /* GDFileService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDFileService.h; sourceTree = "<group>"; };
+		BF54567E16B33C63005E4715 /* GDFileService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDFileService.m; sourceTree = "<group>"; };
+		BF54568016B343A0005E4715 /* GDFileServiceSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDFileServiceSession.h; sourceTree = "<group>"; };
+		BF54568116B343A0005E4715 /* GDFileServiceSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDFileServiceSession.m; sourceTree = "<group>"; };
+		BF54569516B34626005E4715 /* GDDropboxFileService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDDropboxFileService.h; sourceTree = "<group>"; };
+		BF54569616B34626005E4715 /* GDDropboxFileService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDDropboxFileService.m; sourceTree = "<group>"; };
+		BF54569816B36517005E4715 /* GDRemoteFileService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDRemoteFileService.h; sourceTree = "<group>"; };
+		BF54569916B36517005E4715 /* GDRemoteFileService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDRemoteFileService.m; sourceTree = "<group>"; };
+		BF5456AC16B37B78005E4715 /* GDClientCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDClientCredential.h; sourceTree = "<group>"; };
+		BF5456AD16B37B78005E4715 /* GDClientCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDClientCredential.m; sourceTree = "<group>"; };
+		BF5456B716B3A3DD005E4715 /* GDHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDHTTPClient.h; sourceTree = "<group>"; };
+		BF5456B816B3A3DD005E4715 /* GDHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDHTTPClient.m; sourceTree = "<group>"; };
+		BF596B271774379D00C0C58B /* GDURLUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GDURLUtilities.h; path = Source/GDURLUtilities.h; sourceTree = "<group>"; };
+		BF596B281774379D00C0C58B /* GDURLUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GDURLUtilities.m; path = Source/GDURLUtilities.m; sourceTree = "<group>"; };
+		BF5D4AFC169EB6AD005E896E /* GDFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDFileManager.h; sourceTree = "<group>"; };
+		BF5D4AFD169EB6AD005E896E /* GDFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDFileManager.m; sourceTree = "<group>"; };
+		BF5D4B3A169F995E005E896E /* GDAPIToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDAPIToken.h; sourceTree = "<group>"; };
+		BF5D4B3B169F995E005E896E /* GDAPIToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDAPIToken.m; sourceTree = "<group>"; };
+		BF5D4BC716A26550005E896E /* GDDropboxURLMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDDropboxURLMetadata.h; sourceTree = "<group>"; };
+		BF5D4BC816A26551005E896E /* GDDropboxURLMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDDropboxURLMetadata.m; sourceTree = "<group>"; };
+		BF5D4BDA16A558DC005E896E /* GDMetadataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDMetadataCache.h; sourceTree = "<group>"; };
+		BF5EBC1A16BB4F4800421884 /* GDWebDAVCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDWebDAVCredential.h; sourceTree = "<group>"; };
+		BF5EBC1B16BB4F4800421884 /* GDWebDAVCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDWebDAVCredential.m; sourceTree = "<group>"; };
+		BF5EBC1E16BB510000421884 /* GDWebDAVClientManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDWebDAVClientManager.h; sourceTree = "<group>"; };
+		BF5EBC1F16BB510000421884 /* GDWebDAVClientManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDWebDAVClientManager.m; sourceTree = "<group>"; };
+		BF5EBC2116BB52E400421884 /* GDWebDAVClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDWebDAVClient.h; sourceTree = "<group>"; };
+		BF5EBC2216BB52E400421884 /* GDWebDAVClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDWebDAVClient.m; sourceTree = "<group>"; };
+		BF6449CB17C48BB6002723A2 /* AFHTTPRequestOperation+GDFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "AFHTTPRequestOperation+GDFileManager.h"; path = "Source/AFHTTPRequestOperation+GDFileManager.h"; sourceTree = "<group>"; };
+		BF6449CC17C48BB6002723A2 /* AFHTTPRequestOperation+GDFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "AFHTTPRequestOperation+GDFileManager.m"; path = "Source/AFHTTPRequestOperation+GDFileManager.m"; sourceTree = "<group>"; };
+		BF6449CE17C49F5C002723A2 /* GDFileManagerAlias.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDFileManagerAlias.h; sourceTree = "<group>"; };
+		BF6449CF17C49F5C002723A2 /* GDFileManagerAlias.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDFileManagerAlias.m; sourceTree = "<group>"; };
+		BF6449D217C4AAB1002723A2 /* GDFileManagerAlias_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDFileManagerAlias_Private.h; sourceTree = "<group>"; };
+		BF65BD3F16AB5DB700B94AEF /* SugarSyncRefreshTokenRequest.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SugarSyncRefreshTokenRequest.xml; sourceTree = "<group>"; };
+		BF65BD4116AB7E4E00B94AEF /* SugarSyncAccessTokenRequest.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SugarSyncAccessTokenRequest.xml; sourceTree = "<group>"; };
+		BF66E59616D36C6B00A4455D /* GDLoginFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDLoginFormViewController.h; sourceTree = "<group>"; };
+		BF66E59716D36C6B00A4455D /* GDLoginFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDLoginFormViewController.m; sourceTree = "<group>"; };
+		BF66E59916D370C200A4455D /* SugarSyncLoginForm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SugarSyncLoginForm.json; sourceTree = "<group>"; };
+		BF66E59B16D3756700A4455D /* SugarSync.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SugarSync.png; sourceTree = "<group>"; };
+		BF66E59C16D3756700A4455D /* SugarSync@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SugarSync@2x.png"; sourceTree = "<group>"; };
+		BF6D139516BA3ABD001CD0EE /* FileBrowser.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FileBrowser.storyboard; sourceTree = "<group>"; };
+		BF6D139716BA3AEA001CD0EE /* GDFileServiceSessionListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDFileServiceSessionListController.h; sourceTree = "<group>"; };
+		BF6D139816BA3AEA001CD0EE /* GDFileServiceSessionListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDFileServiceSessionListController.m; sourceTree = "<group>"; };
+		BF6FE48F1791308C006E8DE9 /* GDFileServiceManager+AutoRegistration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GDFileServiceManager+AutoRegistration.h"; sourceTree = "<group>"; };
+		BF6FE4901791308C006E8DE9 /* GDFileServiceManager+AutoRegistration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GDFileServiceManager+AutoRegistration.m"; sourceTree = "<group>"; };
+		BF6FE49417940519006E8DE9 /* GDAbstractMetadataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDAbstractMetadataCache.h; sourceTree = "<group>"; };
+		BF6FE49517940519006E8DE9 /* GDAbstractMetadataCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDAbstractMetadataCache.m; sourceTree = "<group>"; };
+		BF6FE4971794055C006E8DE9 /* GDAbstractMetadataCache_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDAbstractMetadataCache_Private.h; sourceTree = "<group>"; };
+		BF703E1E17AFCBBF00978241 /* GDFileManagerCachedDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDFileManagerCachedDownloadOperation.h; sourceTree = "<group>"; };
+		BF703E1F17AFCBC000978241 /* GDFileManagerCachedDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDFileManagerCachedDownloadOperation.m; sourceTree = "<group>"; };
+		BF703E2117AFD27800978241 /* GDFileManager_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDFileManager_Private.h; sourceTree = "<group>"; };
+		BF703E2617B0683A00978241 /* SugarSyncCreateFileRequest.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SugarSyncCreateFileRequest.xml; sourceTree = "<group>"; };
+		BF703E2917B0D18600978241 /* GDSugarSyncUploadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSugarSyncUploadOperation.h; sourceTree = "<group>"; };
+		BF703E2A17B0D18600978241 /* GDSugarSyncUploadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDSugarSyncUploadOperation.m; sourceTree = "<group>"; };
+		BF703E2C17B0D28000978241 /* GDSugarSyncUploadState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSugarSyncUploadState.h; sourceTree = "<group>"; };
+		BF703E2D17B0D28000978241 /* GDSugarSyncUploadState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDSugarSyncUploadState.m; sourceTree = "<group>"; };
+		BF703E2F17B0D2E600978241 /* GDSugarSyncUploadState_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDSugarSyncUploadState_Private.h; sourceTree = "<group>"; };
+		BF74AA9717ECCCC900E44DB3 /* dropbox-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dropbox-icon.png"; sourceTree = "<group>"; };
+		BF74AA9817ECCCC900E44DB3 /* dropbox-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dropbox-icon@2x.png"; sourceTree = "<group>"; };
+		BF74AA9B17ECCCDF00E44DB3 /* sugarsync-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sugarsync-icon.png"; sourceTree = "<group>"; };
+		BF74AA9C17ECCCDF00E44DB3 /* sugarsync-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sugarsync-icon@2x.png"; sourceTree = "<group>"; };
+		BF74AA9F17ECCCEF00E44DB3 /* webdav-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "webdav-icon.png"; sourceTree = "<group>"; };
+		BF74AAA017ECCCEF00E44DB3 /* webdav-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "webdav-icon@2x.png"; sourceTree = "<group>"; };
+		BF74AAA317ECCCFF00E44DB3 /* google-drive-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "google-drive-icon.png"; sourceTree = "<group>"; };
+		BF74AAA417ECCCFF00E44DB3 /* google-drive-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "google-drive-icon@2x.png"; sourceTree = "<group>"; };
+		BF74AAA717ECEA0400E44DB3 /* local-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "local-icon.png"; sourceTree = "<group>"; };
+		BF74AAA817ECEA0400E44DB3 /* local-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "local-icon@2x.png"; sourceTree = "<group>"; };
+		BF75AE9916BA035B00B734AB /* GDClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDClient.h; sourceTree = "<group>"; };
+		BF76EA3217AA4A850088F110 /* GDFileManagerDataCache.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GDFileManagerDataCache.xcdatamodel; sourceTree = "<group>"; };
+		BF76EA3517AA4DD40088F110 /* _GDFileManagerCachedFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _GDFileManagerCachedFile.h; sourceTree = "<group>"; };
+		BF76EA3617AA4DD40088F110 /* _GDFileManagerCachedFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _GDFileManagerCachedFile.m; sourceTree = "<group>"; };
+		BF76EA3917AA4E0E0088F110 /* GDFileManagerCachedFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDFileManagerCachedFile.h; sourceTree = "<group>"; };
+		BF76EA3A17AA4E0E0088F110 /* GDFileManagerCachedFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDFileManagerCachedFile.m; sourceTree = "<group>"; };
+		BF76EA3C17AA4F210088F110 /* GDFileManagerDataCacheCoordinator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDFileManagerDataCacheCoordinator.h; sourceTree = "<group>"; };
+		BF76EA3D17AA4F210088F110 /* GDFileManagerDataCacheCoordinator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDFileManagerDataCacheCoordinator.m; sourceTree = "<group>"; };
+		BF7A3D0417B604C600BB6C0F /* GDGoogleDriveChunkedUploadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDGoogleDriveChunkedUploadOperation.h; sourceTree = "<group>"; };
+		BF7A3D0517B604C600BB6C0F /* GDGoogleDriveChunkedUploadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDGoogleDriveChunkedUploadOperation.m; sourceTree = "<group>"; };
+		BF7A3D0717B60BF400BB6C0F /* GDGoogleDriveUploadState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDGoogleDriveUploadState.h; sourceTree = "<group>"; };
+		BF7A3D0817B60BF400BB6C0F /* GDGoogleDriveUploadState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDGoogleDriveUploadState.m; sourceTree = "<group>"; };
+		BF7A3D0A17B60C8B00BB6C0F /* GDGoogleDriveUploadState_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDGoogleDriveUploadState_Private.h; sourceTree = "<group>"; };
+		BF7F567417C03B6400D977B8 /* GDFileManagerDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDFileManagerDownloadOperation.h; sourceTree = "<group>"; };
+		BF7F567517C03B6400D977B8 /* GDFileManagerDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDFileManagerDownloadOperation.m; sourceTree = "<group>"; };
+		BF7F567717C048AD00D977B8 /* GDFileManagerDownloadOperation_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDFileManagerDownloadOperation_Private.h; sourceTree = "<group>"; };
+		BF7F567A17C04E2800D977B8 /* GDFileManagerConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDFileManagerConstants.h; sourceTree = "<group>"; };
+		BF7F567B17C0526800D977B8 /* GDFileManagerUploadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDFileManagerUploadOperation.h; sourceTree = "<group>"; };
+		BF7F567C17C0526800D977B8 /* GDFileManagerUploadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDFileManagerUploadOperation.m; sourceTree = "<group>"; };
+		BF7F567E17C05E4300D977B8 /* GDFileManagerUploadOperation_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDFileManagerUploadOperation_Private.h; sourceTree = "<group>"; };
+		BF7F567F17C0A10300D977B8 /* GDFileManagerPersistentUploadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDFileManagerPersistentUploadOperation.h; sourceTree = "<group>"; };
+		BF7F568017C0A10300D977B8 /* GDFileManagerPersistentUploadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDFileManagerPersistentUploadOperation.m; sourceTree = "<group>"; };
+		BF7F568217C0A26500D977B8 /* GDFileManagerDataCache 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "GDFileManagerDataCache 2.xcdatamodel"; sourceTree = "<group>"; };
+		BF7F568317C0A40900D977B8 /* _GDFileManagerPendingUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _GDFileManagerPendingUpload.h; sourceTree = "<group>"; };
+		BF7F568417C0A40900D977B8 /* _GDFileManagerPendingUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _GDFileManagerPendingUpload.m; sourceTree = "<group>"; };
+		BF7F568617C0A41600D977B8 /* GDFileManagerPendingUpload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDFileManagerPendingUpload.h; sourceTree = "<group>"; };
+		BF7F568717C0A41600D977B8 /* GDFileManagerPendingUpload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDFileManagerPendingUpload.m; sourceTree = "<group>"; };
+		BF7F568917C0A49F00D977B8 /* GDPersistentUploadDestination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDPersistentUploadDestination.h; sourceTree = "<group>"; };
+		BF7F568A17C0A49F00D977B8 /* GDPersistentUploadDestination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDPersistentUploadDestination.m; sourceTree = "<group>"; };
+		BF7F568F17C0B3DE00D977B8 /* GDFileManagerPersistentUploadOperation_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDFileManagerPersistentUploadOperation_Private.h; sourceTree = "<group>"; };
+		BF816F01179625B000D22F81 /* GDURLMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDURLMetadata.h; sourceTree = "<group>"; };
+		BF816F02179625B000D22F81 /* GDURLMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDURLMetadata.m; sourceTree = "<group>"; };
+		BF816F0417962B5C00D22F81 /* GDURLMetadata_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDURLMetadata_Private.h; sourceTree = "<group>"; };
+		BF83756F1780405B0055ACF4 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		BF83757A178573CC0055ACF4 /* GDHTTPOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDHTTPOperation.h; sourceTree = "<group>"; };
+		BF83757B178573CD0055ACF4 /* GDHTTPOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDHTTPOperation.m; sourceTree = "<group>"; };
+		BF83757D1785A45B0055ACF4 /* GDAccessTokenClientCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDAccessTokenClientCredential.h; sourceTree = "<group>"; };
+		BF83757E1785A45C0055ACF4 /* GDAccessTokenClientCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDAccessTokenClientCredential.m; sourceTree = "<group>"; };
+		BF849CB3169D19E10068B57E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BF849CB5169D19E90068B57E /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BF9A73A61802D07000E1E8A2 /* FileToUpload.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FileToUpload.txt; sourceTree = "<group>"; };
+		BFA7309D1787E16A00DBD673 /* GDParentOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.h; path = GDParentOperation.h; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; wrapsLines = 1; };
+		BFA7309E1787E16A00DBD673 /* GDParentOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.c.objc; path = GDParentOperation.m; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; wrapsLines = 1; };
+		BFA9891917B770CA000B78F4 /* GDFileManagerUploadState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDFileManagerUploadState.h; sourceTree = "<group>"; };
+		BFA9891A17B770CA000B78F4 /* GDFileManagerUploadState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDFileManagerUploadState.m; sourceTree = "<group>"; };
+		BFABDF6F177A8CAF005CA7EE /* GDGoogleDriveMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDGoogleDriveMetadata.h; sourceTree = "<group>"; };
+		BFABDF70177A8CAF005CA7EE /* GDGoogleDriveMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDGoogleDriveMetadata.m; sourceTree = "<group>"; };
+		BFB5B50216B506210049B1F8 /* GDRemoteFileServiceSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDRemoteFileServiceSession.h; sourceTree = "<group>"; };
+		BFB5B50316B506210049B1F8 /* GDRemoteFileServiceSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDRemoteFileServiceSession.m; sourceTree = "<group>"; };
+		BFB7ED0C178ED2D5003DEE44 /* GDCredentialManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDCredentialManager.h; sourceTree = "<group>"; };
+		BFB7ED0D178ED2D5003DEE44 /* GDCredentialManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDCredentialManager.m; sourceTree = "<group>"; };
+		BFB7ED0F178EDE2A003DEE44 /* GDCredentialManager_Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDCredentialManager_Private.h; sourceTree = "<group>"; };
+		BFB7ED10178EE283003DEE44 /* GDKeychainCredentialManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDKeychainCredentialManager.h; sourceTree = "<group>"; };
+		BFB7ED11178EE283003DEE44 /* GDKeychainCredentialManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDKeychainCredentialManager.m; sourceTree = "<group>"; };
+		BFBA948517ADD898008265DB /* GDDropboxChunkedUploadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDDropboxChunkedUploadOperation.h; sourceTree = "<group>"; };
+		BFBA948617ADD898008265DB /* GDDropboxChunkedUploadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDDropboxChunkedUploadOperation.m; sourceTree = "<group>"; };
+		BFBCD68217977ABD00305B86 /* GDCoreDataMetadataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDCoreDataMetadataCache.h; sourceTree = "<group>"; };
+		BFBCD68317977ABD00305B86 /* GDCoreDataMetadataCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDCoreDataMetadataCache.m; sourceTree = "<group>"; };
+		BFBCD68617977ADE00305B86 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BFBCD68917977D6D00305B86 /* GDFileManagerMetadataCache.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GDFileManagerMetadataCache.xcdatamodel; sourceTree = "<group>"; };
+		BFBCD690179786D600305B86 /* GDFileManagerMetadataCache 1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "GDFileManagerMetadataCache 1.xcdatamodel"; sourceTree = "<group>"; };
+		BFBCD6911797870300305B86 /* GDCoreDataFileNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDCoreDataFileNode.h; sourceTree = "<group>"; };
+		BFBCD6921797870300305B86 /* GDCoreDataFileNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDCoreDataFileNode.m; sourceTree = "<group>"; };
+		BFBCD6931797870300305B86 /* GDCoreDataMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDCoreDataMetadata.h; sourceTree = "<group>"; };
+		BFBCD6941797870300305B86 /* GDCoreDataMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDCoreDataMetadata.m; sourceTree = "<group>"; };
+		BFBCD6981797871600305B86 /* _GDCoreDataFileNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _GDCoreDataFileNode.h; sourceTree = "<group>"; };
+		BFBCD6991797871600305B86 /* _GDCoreDataFileNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _GDCoreDataFileNode.m; sourceTree = "<group>"; };
+		BFBCD69A1797871600305B86 /* _GDCoreDataMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _GDCoreDataMetadata.h; sourceTree = "<group>"; };
+		BFBCD69B1797871600305B86 /* _GDCoreDataMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _GDCoreDataMetadata.m; sourceTree = "<group>"; };
+		BFBDD27716B12BB5005AF6DE /* GDURLMetadataInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDURLMetadataInternal.h; sourceTree = "<group>"; };
+		BFBDD27B16B1EC6C005AF6DE /* GDDropboxAPIToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDDropboxAPIToken.h; sourceTree = "<group>"; };
+		BFBDD27C16B1EC6C005AF6DE /* GDDropboxAPIToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDDropboxAPIToken.m; sourceTree = "<group>"; };
+		BFC2FED216BFABB900A1041F /* GDWebDAVURLMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDWebDAVURLMetadata.h; sourceTree = "<group>"; };
+		BFC2FED316BFABB900A1041F /* GDWebDAVURLMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDWebDAVURLMetadata.m; sourceTree = "<group>"; };
+		BFC2FED516BFC88500A1041F /* GDWebDAVFileService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDWebDAVFileService.h; sourceTree = "<group>"; };
+		BFC2FED616BFC88500A1041F /* GDWebDAVFileService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDWebDAVFileService.m; sourceTree = "<group>"; };
+		BFC2FEDB16C06D5200A1041F /* GDWebDAVFileServiceSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDWebDAVFileServiceSession.h; sourceTree = "<group>"; };
+		BFC2FEDC16C06D5200A1041F /* GDWebDAVFileServiceSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDWebDAVFileServiceSession.m; sourceTree = "<group>"; };
+		BFC380DC16B0A230005E6729 /* GDDropboxCredential_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDDropboxCredential_Private.h; sourceTree = "<group>"; };
+		BFC380DF16B0CABE005E6729 /* GDDropbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDDropbox.h; sourceTree = "<group>"; };
+		BFCA229916B509710015B1BF /* GDDropboxFileServiceSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDDropboxFileServiceSession.h; sourceTree = "<group>"; };
+		BFCA229A16B509710015B1BF /* GDDropboxFileServiceSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDDropboxFileServiceSession.m; sourceTree = "<group>"; };
+		BFCA22A716B5218F0015B1BF /* GDSugarSyncCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSugarSyncCredential.h; sourceTree = "<group>"; };
+		BFCA22A816B5218F0015B1BF /* GDSugarSyncCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDSugarSyncCredential.m; sourceTree = "<group>"; };
+		BFCA22AA16B523F00015B1BF /* GDSugarSyncClientManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSugarSyncClientManager.h; sourceTree = "<group>"; };
+		BFCA22AB16B523F10015B1BF /* GDSugarSyncClientManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDSugarSyncClientManager.m; sourceTree = "<group>"; };
+		BFCA22AF16B5259C0015B1BF /* GDSugarSyncClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSugarSyncClient.h; sourceTree = "<group>"; };
+		BFCA22B016B5259C0015B1BF /* GDSugarSyncClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDSugarSyncClient.m; sourceTree = "<group>"; };
+		BFCA22BD16B5E0A60015B1BF /* GDSugarSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDSugarSync.h; sourceTree = "<group>"; };
+		BFCC67A51793D37100C4B701 /* GDFileTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDFileTreeNode.h; sourceTree = "<group>"; };
+		BFCC67A61793D37100C4B701 /* GDFileTreeNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDFileTreeNode.m; sourceTree = "<group>"; };
+		BFCC67A81793D9EE00C4B701 /* GDDiscardingMetadataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDDiscardingMetadataCache.h; sourceTree = "<group>"; };
+		BFCC67A91793D9EF00C4B701 /* GDDiscardingMetadataCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDDiscardingMetadataCache.m; sourceTree = "<group>"; };
+		BFD22F0116AF873500BC5CB8 /* GDDropboxClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDDropboxClient.h; sourceTree = "<group>"; };
+		BFD22F0216AF873500BC5CB8 /* GDDropboxClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDDropboxClient.m; sourceTree = "<group>"; };
+		BFD22F0516AF89CD00BC5CB8 /* GDClientManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDClientManager.h; sourceTree = "<group>"; };
+		BFD22F0616AF89CD00BC5CB8 /* GDClientManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDClientManager.m; sourceTree = "<group>"; };
+		BFD22F0816AF89DF00BC5CB8 /* GDDropboxClientManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDDropboxClientManager.h; sourceTree = "<group>"; };
+		BFD22F0916AF89DF00BC5CB8 /* GDDropboxClientManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDDropboxClientManager.m; sourceTree = "<group>"; };
+		BFD22F0B16AF8E0800BC5CB8 /* GDDropboxCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDDropboxCredential.h; sourceTree = "<group>"; };
+		BFD22F0C16AF8E0800BC5CB8 /* GDDropboxCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDDropboxCredential.m; sourceTree = "<group>"; };
+		BFD22F1116AFA3BE00BC5CB8 /* GDDropboxAccountInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDDropboxAccountInfo.h; sourceTree = "<group>"; };
+		BFD22F1216AFA3BE00BC5CB8 /* GDDropboxAccountInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDDropboxAccountInfo.m; sourceTree = "<group>"; };
+		BFD22F1516AFB3EE00BC5CB8 /* GDDropboxMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDDropboxMetadata.h; sourceTree = "<group>"; };
+		BFD22F1616AFB3EF00BC5CB8 /* GDDropboxMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDDropboxMetadata.m; sourceTree = "<group>"; };
+		BFE13B9417E4F0CE008F7ABC /* GDMultiMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDMultiMap.h; sourceTree = "<group>"; };
+		BFE13B9517E4F0CE008F7ABC /* GDMultiMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDMultiMap.m; sourceTree = "<group>"; };
+		BFE8498A17D2FEE100216B3E /* AsyncSequentialEnumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSequentialEnumeration.h; sourceTree = "<group>"; };
+		BFE8498B17D2FEE100216B3E /* AsyncSequentialEnumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSequentialEnumeration.m; sourceTree = "<group>"; };
+		BFE8498C17D2FEE100216B3E /* GDDispatchUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDDispatchUtilities.h; sourceTree = "<group>"; };
+		BFE8498E17D2FF6000216B3E /* GDKeyboardDismissingNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDKeyboardDismissingNavigationController.h; sourceTree = "<group>"; };
+		BFE8498F17D2FF6000216B3E /* GDKeyboardDismissingNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDKeyboardDismissingNavigationController.m; sourceTree = "<group>"; };
+		BFE8499117D3020800216B3E /* GoogleDrive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoogleDrive.png; sourceTree = "<group>"; };
+		BFE8499217D3020800216B3E /* GoogleDrive@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GoogleDrive@2x.png"; sourceTree = "<group>"; };
+		BFE9D1FC17C9E4F90027E536 /* SugarSyncCopyFileRequest.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = SugarSyncCopyFileRequest.xml; sourceTree = "<group>"; };
+		BFEBCDCD16BB72D200F628B1 /* GDWebDAV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDWebDAV.h; sourceTree = "<group>"; };
+		BFEBCDCF16BB7F3A00F628B1 /* GDWebDAVMetadata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDWebDAVMetadata.h; sourceTree = "<group>"; };
+		BFEBCDD016BB7F3A00F628B1 /* GDWebDAVMetadata.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDWebDAVMetadata.m; sourceTree = "<group>"; };
+		BFEC9BBD16D398390045E77C /* WebDAVServerForm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WebDAVServerForm.json; sourceTree = "<group>"; };
+		BFEC9BBF16D3A2B50045E77C /* WebDAV.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WebDAV.png; sourceTree = "<group>"; };
+		BFEC9BC016D3A2B50045E77C /* WebDAV@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WebDAV@2x.png"; sourceTree = "<group>"; };
+		BFF7C19116A78A26004E97F6 /* GDLayeredMetadataCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDLayeredMetadataCache.h; sourceTree = "<group>"; };
+		BFF7C19216A78A26004E97F6 /* GDLayeredMetadataCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDLayeredMetadataCache.m; sourceTree = "<group>"; };
+		F1D3EB33CE8C46F48846FD59 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF38B57C169BD56600EEA24D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFBCD68717977ADE00305B86 /* CoreData.framework in Frameworks */,
+				BF8375701780405B0055ACF4 /* QuickLook.framework in Frameworks */,
+				BF400D5F1771E8B5002ECE29 /* QuartzCore.framework in Frameworks */,
+				BF849CB6169D19E90068B57E /* MobileCoreServices.framework in Frameworks */,
+				BF849CB4169D19E10068B57E /* SystemConfiguration.framework in Frameworks */,
+				BF38B584169BD56600EEA24D /* UIKit.framework in Frameworks */,
+				BF38B586169BD56600EEA24D /* Foundation.framework in Frameworks */,
+				BF38B588169BD56600EEA24D /* CoreGraphics.framework in Frameworks */,
+				A7D19A41923A4F15889827D0 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF028B781778659800843D0E /* Google Drive */ = {
+			isa = PBXGroup;
+			children = (
+				BF028B79177865D100843D0E /* GDGoogleDrive.h */,
+				BF028B7A177865F200843D0E /* Model */,
+				BF7A3D0317B5FFA300BB6C0F /* Operations */,
+				BF028B7B1778660400843D0E /* Controller */,
+				BF028B7C1778661B00843D0E /* Resources */,
+			);
+			path = "Google Drive";
+			sourceTree = "<group>";
+		};
+		BF028B7A177865F200843D0E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF028B80177866AC00843D0E /* GDOAuth2Credential.h */,
+				BF028B81177866AC00843D0E /* GDOAuth2Credential.m */,
+				BF028B83177866CD00843D0E /* GDGoogleDriveAPIToken.h */,
+				BF028B84177866CD00843D0E /* GDGoogleDriveAPIToken.m */,
+				BF028B9017787D2400843D0E /* GDGoogleDriveAccountInfo.h */,
+				BF028B9117787D2400843D0E /* GDGoogleDriveAccountInfo.m */,
+				BFABDF6F177A8CAF005CA7EE /* GDGoogleDriveMetadata.h */,
+				BFABDF70177A8CAF005CA7EE /* GDGoogleDriveMetadata.m */,
+				BF474C76177C60F400BDAE73 /* GDGoogleDriveChange.h */,
+				BF474C77177C60F400BDAE73 /* GDGoogleDriveChange.m */,
+				BF7A3D0717B60BF400BB6C0F /* GDGoogleDriveUploadState.h */,
+				BF7A3D0A17B60C8B00BB6C0F /* GDGoogleDriveUploadState_Private.h */,
+				BF7A3D0817B60BF400BB6C0F /* GDGoogleDriveUploadState.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF028B7B1778660400843D0E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF028B7D1778663C00843D0E /* GDGoogleDriveClientManager.h */,
+				BF028B7E1778663C00843D0E /* GDGoogleDriveClientManager.m */,
+				BF028B8D1778748600843D0E /* GDGoogleDriveClient.h */,
+				BF028B8E1778748600843D0E /* GDGoogleDriveClient.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF028B7C1778661B00843D0E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8499117D3020800216B3E /* GoogleDrive.png */,
+				BFE8499217D3020800216B3E /* GoogleDrive@2x.png */,
+				BF74AAA317ECCCFF00E44DB3 /* google-drive-icon.png */,
+				BF74AAA417ECCCFF00E44DB3 /* google-drive-icon@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BF048E7316BBBB1F002549B2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF048E7516BBBB7F002549B2 /* WebDAVMetadataRequest.xml */,
+				BFEC9BBD16D398390045E77C /* WebDAVServerForm.json */,
+				BFEC9BBF16D3A2B50045E77C /* WebDAV.png */,
+				BFEC9BC016D3A2B50045E77C /* WebDAV@2x.png */,
+				BF74AA9F17ECCCEF00E44DB3 /* webdav-icon.png */,
+				BF74AAA017ECCCEF00E44DB3 /* webdav-icon@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BF087AC916B60417000F1A9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF29898116AA9860007A444F /* GDSugarSyncAPIToken.h */,
+				BF29898216AA9860007A444F /* GDSugarSyncAPIToken.m */,
+				BFCA22A716B5218F0015B1BF /* GDSugarSyncCredential.h */,
+				BFCA22A816B5218F0015B1BF /* GDSugarSyncCredential.m */,
+				BF087ACB16B60432000F1A9E /* GDSugarSyncAccountInfo.h */,
+				BF087ACC16B60432000F1A9E /* GDSugarSyncAccountInfo.m */,
+				BF087AD416B66E7D000F1A9E /* GDSugarSyncMetadata.h */,
+				BF087AD516B66E7D000F1A9E /* GDSugarSyncMetadata.m */,
+				BF703E2C17B0D28000978241 /* GDSugarSyncUploadState.h */,
+				BF703E2F17B0D2E600978241 /* GDSugarSyncUploadState_Private.h */,
+				BF703E2D17B0D28000978241 /* GDSugarSyncUploadState.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF087AD716B72A1C000F1A9E /* SugarSync */ = {
+			isa = PBXGroup;
+			children = (
+				BF087ADE16B72CD0000F1A9E /* GDSugarSyncURLMetadata.h */,
+				BF16BA3217B3CD4E0003C830 /* GDSugarSyncURLMetadata_Private.h */,
+				BF087ADF16B72CD1000F1A9E /* GDSugarSyncURLMetadata.m */,
+				BF087AD816B72A3E000F1A9E /* GDSugarSyncFileService.h */,
+				BF087AD916B72A3E000F1A9E /* GDSugarSyncFileService.m */,
+				BF087ADB16B72B2D000F1A9E /* GDSugarSyncFileServiceSession.h */,
+				BF087ADC16B72B2D000F1A9E /* GDSugarSyncFileServiceSession.m */,
+			);
+			path = SugarSync;
+			sourceTree = "<group>";
+		};
+		BF2006D716E2008A0082510E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF2006D816E2009B0082510E /* Dropbox.png */,
+				BF2006DA16E200A20082510E /* Dropbox@2x.png */,
+				BF74AA9717ECCCC900E44DB3 /* dropbox-icon.png */,
+				BF74AA9817ECCCC900E44DB3 /* dropbox-icon@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BF2006DF16E206CB0082510E /* GDFileServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				BF54567816B337ED005E4715 /* GDFileServiceManager.h */,
+				BF54567916B337ED005E4715 /* GDFileServiceManager.m */,
+				BF6FE48F1791308C006E8DE9 /* GDFileServiceManager+AutoRegistration.h */,
+				BF6FE4901791308C006E8DE9 /* GDFileServiceManager+AutoRegistration.m */,
+				BF2006DC16E206C40082510E /* GDFileServiceViewController.h */,
+				BF2006DD16E206C40082510E /* GDFileServiceViewController.m */,
+				BF2006E516E2254E0082510E /* GDImageCell.xib */,
+				BF2006E216E207F20082510E /* GDImageCell.h */,
+				BF2006E316E207F20082510E /* GDImageCell.m */,
+				BF6D139516BA3ABD001CD0EE /* FileBrowser.storyboard */,
+				BF6D139716BA3AEA001CD0EE /* GDFileServiceSessionListController.h */,
+				BF6D139816BA3AEA001CD0EE /* GDFileServiceSessionListController.m */,
+			);
+			path = GDFileServiceManager;
+			sourceTree = "<group>";
+		};
+		BF2985E617CB42280030C53E /* Local */ = {
+			isa = PBXGroup;
+			children = (
+				BF74AAA717ECEA0400E44DB3 /* local-icon.png */,
+				BF74AAA817ECEA0400E44DB3 /* local-icon@2x.png */,
+				BF2985E717CB424D0030C53E /* GDLocalURLMetadata.h */,
+				BF2985E817CB424D0030C53E /* GDLocalURLMetadata.m */,
+				BF2985EA17CB46470030C53E /* GDLocalFileService.h */,
+				BF2985EB17CB46470030C53E /* GDLocalFileService.m */,
+				BF2985ED17CB477E0030C53E /* GDLocalFileServiceSession.h */,
+				BF2985EE17CB477E0030C53E /* GDLocalFileServiceSession.m */,
+			);
+			path = Local;
+			sourceTree = "<group>";
+		};
+		BF2AD8B517B9148600EF42A2 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				BF2AD8B617B914A100EF42A2 /* GDWebDAVUploadOperation.h */,
+				BF2AD8B717B914A100EF42A2 /* GDWebDAVUploadOperation.m */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		BF38B574169BD56600EEA24D = {
+			isa = PBXGroup;
+			children = (
+				BF3FFDA217D3050E00C74DB7 /* GDFileManagerKit.h */,
+				BF3FFDF517D3402600C74DB7 /* GDFileManagerResourceBundle.h */,
+				BF3FFDF617D3402600C74DB7 /* GDFileManagerResourceBundle.m */,
+				BF596B271774379D00C0C58B /* GDURLUtilities.h */,
+				BF596B281774379D00C0C58B /* GDURLUtilities.m */,
+				BF6449CB17C48BB6002723A2 /* AFHTTPRequestOperation+GDFileManager.h */,
+				BF6449CC17C48BB6002723A2 /* AFHTTPRequestOperation+GDFileManager.m */,
+				BFB7ED09178D6CC9003DEE44 /* GCD utilities */,
+				BFB7ED08178D6CBF003DEE44 /* NSOperation */,
+				BF66E59516D36AC400A4455D /* Login Controllers */,
+				BFB7ED0B178ED2B6003DEE44 /* Credential manager */,
+				BFD22F0416AF89A400BC5CB8 /* API Clients */,
+				BF5D4B00169EB6B5005E896E /* GDFileManager */,
+				BF38B589169BD56600EEA24D /* GDFileManagerExample */,
+				BF38B582169BD56600EEA24D /* Frameworks */,
+				BF38B580169BD56600EEA24D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF38B580169BD56600EEA24D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF38B57F169BD56600EEA24D /* GDFileManagerExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF38B582169BD56600EEA24D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFBCD68617977ADE00305B86 /* CoreData.framework */,
+				BF83756F1780405B0055ACF4 /* QuickLook.framework */,
+				BF400D5E1771E8B5002ECE29 /* QuartzCore.framework */,
+				BF849CB5169D19E90068B57E /* MobileCoreServices.framework */,
+				BF849CB3169D19E10068B57E /* SystemConfiguration.framework */,
+				BF38B583169BD56600EEA24D /* UIKit.framework */,
+				BF38B585169BD56600EEA24D /* Foundation.framework */,
+				BF38B587169BD56600EEA24D /* CoreGraphics.framework */,
+				BF38B5AD169BD56600EEA24D /* SenTestingKit.framework */,
+				F1D3EB33CE8C46F48846FD59 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF38B589169BD56600EEA24D /* GDFileManagerExample */ = {
+			isa = PBXGroup;
+			children = (
+				BF9A73A61802D07000E1E8A2 /* FileToUpload.txt */,
+				BF38B592169BD56600EEA24D /* GDAppDelegate.h */,
+				BF38B593169BD56600EEA24D /* GDAppDelegate.m */,
+				BF38B59B169BD56600EEA24D /* MainStoryboard_iPhone.storyboard */,
+				BF38B59E169BD56600EEA24D /* MainStoryboard_iPad.storyboard */,
+				BF3FFDF317D322B400C74DB7 /* GDMasterViewController.storyboard */,
+				BF38B5A1169BD56600EEA24D /* GDMasterViewController.h */,
+				BF38B5A2169BD56600EEA24D /* GDMasterViewController.m */,
+				BF38B5A4169BD56600EEA24D /* GDDetailViewController.h */,
+				BF38B5A5169BD56600EEA24D /* GDDetailViewController.m */,
+				BF38B58A169BD56600EEA24D /* Supporting Files */,
+			);
+			path = GDFileManagerExample;
+			sourceTree = "<group>";
+		};
+		BF38B58A169BD56600EEA24D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF38B58B169BD56600EEA24D /* GDFileManagerExample-Info.plist */,
+				BF38B58C169BD56600EEA24D /* InfoPlist.strings */,
+				BF38B58F169BD56600EEA24D /* main.m */,
+				BF38B591169BD56600EEA24D /* GDFileManagerExample-Prefix.pch */,
+				BF38B595169BD56600EEA24D /* Default.png */,
+				BF38B597169BD56600EEA24D /* Default@2x.png */,
+				BF38B599169BD56600EEA24D /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF3EA8951797B99D0017CF6D /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				BF816F01179625B000D22F81 /* GDURLMetadata.h */,
+				BFBDD27716B12BB5005AF6DE /* GDURLMetadataInternal.h */,
+				BF816F0417962B5C00D22F81 /* GDURLMetadata_Private.h */,
+				BF816F02179625B000D22F81 /* GDURLMetadata.m */,
+			);
+			path = Metadata;
+			sourceTree = "<group>";
+		};
+		BF474C7D177E8F8200BDAE73 /* Google Drive */ = {
+			isa = PBXGroup;
+			children = (
+				BF474C7E177E8FBB00BDAE73 /* GDGoogleDriveURLMetadata.h */,
+				BF474C7F177E8FBB00BDAE73 /* GDGoogleDriveURLMetadata.m */,
+				BF474C81177E9CD700BDAE73 /* GDGoogleDriveFileService.h */,
+				BF474C82177E9CD700BDAE73 /* GDGoogleDriveFileService.m */,
+				BF474C84177E9D7200BDAE73 /* GDGoogleDriveFileServiceSession.h */,
+				BF474C85177E9D7200BDAE73 /* GDGoogleDriveFileServiceSession.m */,
+			);
+			path = "Google Drive";
+			sourceTree = "<group>";
+		};
+		BF5D4B00169EB6B5005E896E /* GDFileManager */ = {
+			isa = PBXGroup;
+			children = (
+				BF5D4AFC169EB6AD005E896E /* GDFileManager.h */,
+				BF703E2117AFD27800978241 /* GDFileManager_Private.h */,
+				BF7F567A17C04E2800D977B8 /* GDFileManagerConstants.h */,
+				BF5D4AFD169EB6AD005E896E /* GDFileManager.m */,
+				BFA9891917B770CA000B78F4 /* GDFileManagerUploadState.h */,
+				BFA9891A17B770CA000B78F4 /* GDFileManagerUploadState.m */,
+				BF6449CE17C49F5C002723A2 /* GDFileManagerAlias.h */,
+				BF6449D217C4AAB1002723A2 /* GDFileManagerAlias_Private.h */,
+				BF6449CF17C49F5C002723A2 /* GDFileManagerAlias.m */,
+				BF3FFDF017D31DF400C74DB7 /* GDFileListViewController.h */,
+				BF3FFDF117D31DF400C74DB7 /* GDFileListViewController.m */,
+				BFA9891217B7298B000B78F4 /* Operations */,
+				BF2006DF16E206CB0082510E /* GDFileServiceManager */,
+				BF3EA8951797B99D0017CF6D /* Metadata */,
+				BF5D4BDF16A55A6D005E896E /* Cache */,
+				BF76EA3017AA35920088F110 /* Data cache */,
+				BF5D4B4416A01C7B005E896E /* File Services */,
+			);
+			name = GDFileManager;
+			path = Source/GDFileManager;
+			sourceTree = "<group>";
+		};
+		BF5D4B4416A01C7B005E896E /* File Services */ = {
+			isa = PBXGroup;
+			children = (
+				BF54567D16B33C63005E4715 /* GDFileService.h */,
+				BF54567E16B33C63005E4715 /* GDFileService.m */,
+				BF54569816B36517005E4715 /* GDRemoteFileService.h */,
+				BF54569916B36517005E4715 /* GDRemoteFileService.m */,
+				BF54568016B343A0005E4715 /* GDFileServiceSession.h */,
+				BF54568116B343A0005E4715 /* GDFileServiceSession.m */,
+				BFB5B50216B506210049B1F8 /* GDRemoteFileServiceSession.h */,
+				BFB5B50316B506210049B1F8 /* GDRemoteFileServiceSession.m */,
+				BF2985E617CB42280030C53E /* Local */,
+				BFBDD27A16B15841005AF6DE /* Dropbox */,
+				BF087AD716B72A1C000F1A9E /* SugarSync */,
+				BFC2FED016BFAB9B00A1041F /* WebDAV */,
+				BF474C7D177E8F8200BDAE73 /* Google Drive */,
+			);
+			path = "File Services";
+			sourceTree = "<group>";
+		};
+		BF5D4BDF16A55A6D005E896E /* Cache */ = {
+			isa = PBXGroup;
+			children = (
+				BF5D4BDA16A558DC005E896E /* GDMetadataCache.h */,
+				BFCC67A51793D37100C4B701 /* GDFileTreeNode.h */,
+				BFCC67A61793D37100C4B701 /* GDFileTreeNode.m */,
+				BF6FE49417940519006E8DE9 /* GDAbstractMetadataCache.h */,
+				BF6FE4971794055C006E8DE9 /* GDAbstractMetadataCache_Private.h */,
+				BF6FE49517940519006E8DE9 /* GDAbstractMetadataCache.m */,
+				BFCC67A81793D9EE00C4B701 /* GDDiscardingMetadataCache.h */,
+				BFCC67A91793D9EF00C4B701 /* GDDiscardingMetadataCache.m */,
+				BF2E2E1B16A664C4004A5DB1 /* GDRetainingMetadataCache.h */,
+				BF2E2E1C16A664C4004A5DB1 /* GDRetainingMetadataCache.m */,
+				BFBCD68517977AC700305B86 /* CoreData cache */,
+				BFF7C19116A78A26004E97F6 /* GDLayeredMetadataCache.h */,
+				BFF7C19216A78A26004E97F6 /* GDLayeredMetadataCache.m */,
+			);
+			name = Cache;
+			path = "Metadata cache";
+			sourceTree = "<group>";
+		};
+		BF5EBC1716BB4EFD00421884 /* WebDAV */ = {
+			isa = PBXGroup;
+			children = (
+				BFEBCDCD16BB72D200F628B1 /* GDWebDAV.h */,
+				BF5EBC1916BB4F0F00421884 /* Model */,
+				BF2AD8B517B9148600EF42A2 /* Operations */,
+				BF5EBC1D16BB50BB00421884 /* Controller */,
+				BF048E7316BBBB1F002549B2 /* Resources */,
+			);
+			path = WebDAV;
+			sourceTree = "<group>";
+		};
+		BF5EBC1916BB4F0F00421884 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF5EBC1A16BB4F4800421884 /* GDWebDAVCredential.h */,
+				BF5EBC1B16BB4F4800421884 /* GDWebDAVCredential.m */,
+				BFEBCDCF16BB7F3A00F628B1 /* GDWebDAVMetadata.h */,
+				BFEBCDD016BB7F3A00F628B1 /* GDWebDAVMetadata.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BF5EBC1D16BB50BB00421884 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BF5EBC1E16BB510000421884 /* GDWebDAVClientManager.h */,
+				BF5EBC1F16BB510000421884 /* GDWebDAVClientManager.m */,
+				BF5EBC2116BB52E400421884 /* GDWebDAVClient.h */,
+				BF5EBC2216BB52E400421884 /* GDWebDAVClient.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BF65BD3D16AB5D9800B94AEF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF66E59B16D3756700A4455D /* SugarSync.png */,
+				BF66E59C16D3756700A4455D /* SugarSync@2x.png */,
+				BF74AA9B17ECCCDF00E44DB3 /* sugarsync-icon.png */,
+				BF74AA9C17ECCCDF00E44DB3 /* sugarsync-icon@2x.png */,
+				BF66E59916D370C200A4455D /* SugarSyncLoginForm.json */,
+				BF65BD3F16AB5DB700B94AEF /* SugarSyncRefreshTokenRequest.xml */,
+				BF65BD4116AB7E4E00B94AEF /* SugarSyncAccessTokenRequest.xml */,
+				BF703E2617B0683A00978241 /* SugarSyncCreateFileRequest.xml */,
+				BFE9D1FC17C9E4F90027E536 /* SugarSyncCopyFileRequest.xml */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BF66E59516D36AC400A4455D /* Login Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8498E17D2FF6000216B3E /* GDKeyboardDismissingNavigationController.h */,
+				BFE8498F17D2FF6000216B3E /* GDKeyboardDismissingNavigationController.m */,
+				BF66E59616D36C6B00A4455D /* GDLoginFormViewController.h */,
+				BF66E59716D36C6B00A4455D /* GDLoginFormViewController.m */,
+				BF3B626B17708EE6008FB4D3 /* GDWebLoginController.h */,
+				BF3B626E177090C5008FB4D3 /* GDWebLoginController_Private.h */,
+				BF3B626C17708EE6008FB4D3 /* GDWebLoginController.m */,
+				BF400D5B1771E555002ECE29 /* GDWebLoginControllerDefaultDelegate.h */,
+				BF400D5C1771E555002ECE29 /* GDWebLoginControllerDefaultDelegate.m */,
+				BF39FACF176454CD0027358D /* GDWebLoginViewController.h */,
+				BF39FAD0176454CD0027358D /* GDWebLoginViewController.m */,
+			);
+			name = "Login Controllers";
+			path = "Source/Login Controllers";
+			sourceTree = "<group>";
+		};
+		BF703E2817B0D16D00978241 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				BF22DEC417B3BEC200B18505 /* GDSugarSyncDownloadOperation.h */,
+				BF22DEC517B3BEC200B18505 /* GDSugarSyncDownloadOperation.m */,
+				BF703E2917B0D18600978241 /* GDSugarSyncUploadOperation.h */,
+				BF703E2A17B0D18600978241 /* GDSugarSyncUploadOperation.m */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		BF76EA3017AA35920088F110 /* Data cache */ = {
+			isa = PBXGroup;
+			children = (
+				BF76EA3117AA4A850088F110 /* GDFileManagerDataCache.xcdatamodeld */,
+				BF76EA3417AA4DCA0088F110 /* Machine */,
+				BF76EA3917AA4E0E0088F110 /* GDFileManagerCachedFile.h */,
+				BF76EA3A17AA4E0E0088F110 /* GDFileManagerCachedFile.m */,
+				BF7F568617C0A41600D977B8 /* GDFileManagerPendingUpload.h */,
+				BF7F568717C0A41600D977B8 /* GDFileManagerPendingUpload.m */,
+				BF76EA3C17AA4F210088F110 /* GDFileManagerDataCacheCoordinator.h */,
+				BF76EA3D17AA4F210088F110 /* GDFileManagerDataCacheCoordinator.m */,
+			);
+			path = "Data cache";
+			sourceTree = "<group>";
+		};
+		BF76EA3417AA4DCA0088F110 /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				BF76EA3517AA4DD40088F110 /* _GDFileManagerCachedFile.h */,
+				BF76EA3617AA4DD40088F110 /* _GDFileManagerCachedFile.m */,
+				BF7F568317C0A40900D977B8 /* _GDFileManagerPendingUpload.h */,
+				BF7F568417C0A40900D977B8 /* _GDFileManagerPendingUpload.m */,
+			);
+			name = Machine;
+			sourceTree = "<group>";
+		};
+		BF7A3D0317B5FFA300BB6C0F /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				BF7A3D0417B604C600BB6C0F /* GDGoogleDriveChunkedUploadOperation.h */,
+				BF7A3D0517B604C600BB6C0F /* GDGoogleDriveChunkedUploadOperation.m */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		BFA9891217B7298B000B78F4 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				BF7F567417C03B6400D977B8 /* GDFileManagerDownloadOperation.h */,
+				BF7F567717C048AD00D977B8 /* GDFileManagerDownloadOperation_Private.h */,
+				BF7F567517C03B6400D977B8 /* GDFileManagerDownloadOperation.m */,
+				BF703E1E17AFCBBF00978241 /* GDFileManagerCachedDownloadOperation.h */,
+				BF703E1F17AFCBC000978241 /* GDFileManagerCachedDownloadOperation.m */,
+				BF7F567B17C0526800D977B8 /* GDFileManagerUploadOperation.h */,
+				BF7F567E17C05E4300D977B8 /* GDFileManagerUploadOperation_Private.h */,
+				BF7F567C17C0526800D977B8 /* GDFileManagerUploadOperation.m */,
+				BF7F568917C0A49F00D977B8 /* GDPersistentUploadDestination.h */,
+				BF7F568A17C0A49F00D977B8 /* GDPersistentUploadDestination.m */,
+				BF7F567F17C0A10300D977B8 /* GDFileManagerPersistentUploadOperation.h */,
+				BF7F568F17C0B3DE00D977B8 /* GDFileManagerPersistentUploadOperation_Private.h */,
+				BF7F568017C0A10300D977B8 /* GDFileManagerPersistentUploadOperation.m */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		BFB7ED08178D6CBF003DEE44 /* NSOperation */ = {
+			isa = PBXGroup;
+			children = (
+				BFA7309D1787E16A00DBD673 /* GDParentOperation.h */,
+				BFA7309E1787E16A00DBD673 /* GDParentOperation.m */,
+				BF83757A178573CC0055ACF4 /* GDHTTPOperation.h */,
+				BF83757B178573CD0055ACF4 /* GDHTTPOperation.m */,
+			);
+			name = NSOperation;
+			path = Source/NSOperation;
+			sourceTree = "<group>";
+		};
+		BFB7ED09178D6CC9003DEE44 /* GCD utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BFE8498A17D2FEE100216B3E /* AsyncSequentialEnumeration.h */,
+				BFE8498B17D2FEE100216B3E /* AsyncSequentialEnumeration.m */,
+				BFE8498C17D2FEE100216B3E /* GDDispatchUtilities.h */,
+				BFE13B9417E4F0CE008F7ABC /* GDMultiMap.h */,
+				BFE13B9517E4F0CE008F7ABC /* GDMultiMap.m */,
+			);
+			name = "GCD utilities";
+			path = "Source/GCD Utilities";
+			sourceTree = "<group>";
+		};
+		BFB7ED0B178ED2B6003DEE44 /* Credential manager */ = {
+			isa = PBXGroup;
+			children = (
+				BFB7ED0C178ED2D5003DEE44 /* GDCredentialManager.h */,
+				BFB7ED0F178EDE2A003DEE44 /* GDCredentialManager_Private.h */,
+				BFB7ED0D178ED2D5003DEE44 /* GDCredentialManager.m */,
+				BFB7ED10178EE283003DEE44 /* GDKeychainCredentialManager.h */,
+				BFB7ED11178EE283003DEE44 /* GDKeychainCredentialManager.m */,
+				BF5D4B3A169F995E005E896E /* GDAPIToken.h */,
+				BF5D4B3B169F995E005E896E /* GDAPIToken.m */,
+				BF5456AC16B37B78005E4715 /* GDClientCredential.h */,
+				BF5456AD16B37B78005E4715 /* GDClientCredential.m */,
+			);
+			name = "Credential manager";
+			path = "Source/Credential manager";
+			sourceTree = "<group>";
+		};
+		BFBA948417ADD876008265DB /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				BFBA948517ADD898008265DB /* GDDropboxChunkedUploadOperation.h */,
+				BFBA948617ADD898008265DB /* GDDropboxChunkedUploadOperation.m */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		BFBCD68517977AC700305B86 /* CoreData cache */ = {
+			isa = PBXGroup;
+			children = (
+				BFBCD69E1797873700305B86 /* CoreData object classes */,
+				BFBCD68217977ABD00305B86 /* GDCoreDataMetadataCache.h */,
+				BFBCD68317977ABD00305B86 /* GDCoreDataMetadataCache.m */,
+			);
+			name = "CoreData cache";
+			sourceTree = "<group>";
+		};
+		BFBCD6971797870B00305B86 /* Machine */ = {
+			isa = PBXGroup;
+			children = (
+				BFBCD6981797871600305B86 /* _GDCoreDataFileNode.h */,
+				BFBCD6991797871600305B86 /* _GDCoreDataFileNode.m */,
+				BFBCD69A1797871600305B86 /* _GDCoreDataMetadata.h */,
+				BFBCD69B1797871600305B86 /* _GDCoreDataMetadata.m */,
+			);
+			name = Machine;
+			sourceTree = "<group>";
+		};
+		BFBCD69E1797873700305B86 /* CoreData object classes */ = {
+			isa = PBXGroup;
+			children = (
+				BFBCD68817977D6D00305B86 /* GDFileManagerMetadataCache.xcdatamodeld */,
+				BFBCD6971797870B00305B86 /* Machine */,
+				BFBCD6911797870300305B86 /* GDCoreDataFileNode.h */,
+				BFBCD6921797870300305B86 /* GDCoreDataFileNode.m */,
+				BFBCD6931797870300305B86 /* GDCoreDataMetadata.h */,
+				BFBCD6941797870300305B86 /* GDCoreDataMetadata.m */,
+			);
+			name = "CoreData object classes";
+			sourceTree = "<group>";
+		};
+		BFBDD27A16B15841005AF6DE /* Dropbox */ = {
+			isa = PBXGroup;
+			children = (
+				BF5D4BC716A26550005E896E /* GDDropboxURLMetadata.h */,
+				BF5D4BC816A26551005E896E /* GDDropboxURLMetadata.m */,
+				BF54569516B34626005E4715 /* GDDropboxFileService.h */,
+				BF54569616B34626005E4715 /* GDDropboxFileService.m */,
+				BFCA229916B509710015B1BF /* GDDropboxFileServiceSession.h */,
+				BFCA229A16B509710015B1BF /* GDDropboxFileServiceSession.m */,
+			);
+			path = Dropbox;
+			sourceTree = "<group>";
+		};
+		BFC2FED016BFAB9B00A1041F /* WebDAV */ = {
+			isa = PBXGroup;
+			children = (
+				BFC2FED216BFABB900A1041F /* GDWebDAVURLMetadata.h */,
+				BFC2FED316BFABB900A1041F /* GDWebDAVURLMetadata.m */,
+				BFC2FED516BFC88500A1041F /* GDWebDAVFileService.h */,
+				BFC2FED616BFC88500A1041F /* GDWebDAVFileService.m */,
+				BFC2FEDB16C06D5200A1041F /* GDWebDAVFileServiceSession.h */,
+				BFC2FEDC16C06D5200A1041F /* GDWebDAVFileServiceSession.m */,
+			);
+			path = WebDAV;
+			sourceTree = "<group>";
+		};
+		BFC380E016B0CB92005E6729 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BFD22F0816AF89DF00BC5CB8 /* GDDropboxClientManager.h */,
+				BFD22F0916AF89DF00BC5CB8 /* GDDropboxClientManager.m */,
+				BFD22F0116AF873500BC5CB8 /* GDDropboxClient.h */,
+				BFD22F0216AF873500BC5CB8 /* GDDropboxClient.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BFCA22A516B521190015B1BF /* SugarSync */ = {
+			isa = PBXGroup;
+			children = (
+				BFCA22BD16B5E0A60015B1BF /* GDSugarSync.h */,
+				BF087AC916B60417000F1A9E /* Model */,
+				BF703E2817B0D16D00978241 /* Operations */,
+				BFCA22AD16B523F60015B1BF /* Controller */,
+				BF65BD3D16AB5D9800B94AEF /* Resources */,
+			);
+			path = SugarSync;
+			sourceTree = "<group>";
+		};
+		BFCA22AD16B523F60015B1BF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BFCA22AA16B523F00015B1BF /* GDSugarSyncClientManager.h */,
+				BFCA22AB16B523F10015B1BF /* GDSugarSyncClientManager.m */,
+				BFCA22AF16B5259C0015B1BF /* GDSugarSyncClient.h */,
+				BFCA22B016B5259C0015B1BF /* GDSugarSyncClient.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BFD22F0016AF871C00BC5CB8 /* Dropbox */ = {
+			isa = PBXGroup;
+			children = (
+				BFC380DF16B0CABE005E6729 /* GDDropbox.h */,
+				BFD22F1416AFA3C200BC5CB8 /* Model */,
+				BFBA948417ADD876008265DB /* Operations */,
+				BFC380E016B0CB92005E6729 /* Controller */,
+				BF2006D716E2008A0082510E /* Resources */,
+			);
+			path = Dropbox;
+			sourceTree = "<group>";
+		};
+		BFD22F0416AF89A400BC5CB8 /* API Clients */ = {
+			isa = PBXGroup;
+			children = (
+				BFD22F0516AF89CD00BC5CB8 /* GDClientManager.h */,
+				BFD22F0616AF89CD00BC5CB8 /* GDClientManager.m */,
+				BF75AE9916BA035B00B734AB /* GDClient.h */,
+				BF5456B716B3A3DD005E4715 /* GDHTTPClient.h */,
+				BF5456B816B3A3DD005E4715 /* GDHTTPClient.m */,
+				BF83757D1785A45B0055ACF4 /* GDAccessTokenClientCredential.h */,
+				BF83757E1785A45C0055ACF4 /* GDAccessTokenClientCredential.m */,
+				BF087ACE16B604E3000F1A9E /* GDDictionaryBackedObject.h */,
+				BF087ACF16B604E3000F1A9E /* GDDictionaryBackedObject.m */,
+				BFD22F0016AF871C00BC5CB8 /* Dropbox */,
+				BFCA22A516B521190015B1BF /* SugarSync */,
+				BF5EBC1716BB4EFD00421884 /* WebDAV */,
+				BF028B781778659800843D0E /* Google Drive */,
+			);
+			name = "API Clients";
+			path = "Source/API Clients";
+			sourceTree = "<group>";
+		};
+		BFD22F1416AFA3C200BC5CB8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFBDD27B16B1EC6C005AF6DE /* GDDropboxAPIToken.h */,
+				BFBDD27C16B1EC6C005AF6DE /* GDDropboxAPIToken.m */,
+				BFD22F0B16AF8E0800BC5CB8 /* GDDropboxCredential.h */,
+				BFC380DC16B0A230005E6729 /* GDDropboxCredential_Private.h */,
+				BFD22F0C16AF8E0800BC5CB8 /* GDDropboxCredential.m */,
+				BFD22F1116AFA3BE00BC5CB8 /* GDDropboxAccountInfo.h */,
+				BFD22F1216AFA3BE00BC5CB8 /* GDDropboxAccountInfo.m */,
+				BFD22F1516AFB3EE00BC5CB8 /* GDDropboxMetadata.h */,
+				BFD22F1616AFB3EF00BC5CB8 /* GDDropboxMetadata.m */,
+				BF2E8C2B17ACE79C00901951 /* GDDropboxUploadState.h */,
+				BF2E8C2C17ACE79C00901951 /* GDDropboxUploadState.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF38B57E169BD56600EEA24D /* GDFileManagerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF38B5BE169BD56600EEA24D /* Build configuration list for PBXNativeTarget "GDFileManagerExample" */;
+			buildPhases = (
+				BF38B57B169BD56600EEA24D /* Sources */,
+				BF38B57C169BD56600EEA24D /* Frameworks */,
+				BF38B57D169BD56600EEA24D /* Resources */,
+				694D94FE42474A21BA2ED3B1 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GDFileManagerExample;
+			productName = GDFileManagerExample;
+			productReference = BF38B57F169BD56600EEA24D /* GDFileManagerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF38B576169BD56600EEA24D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GD;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Graham Dennis";
+			};
+			buildConfigurationList = BF38B579169BD56600EEA24D /* Build configuration list for PBXProject "GDFileManagerExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BF38B574169BD56600EEA24D;
+			productRefGroup = BF38B580169BD56600EEA24D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF38B57E169BD56600EEA24D /* GDFileManagerExample */,
+				BFBCD68B179785AF00305B86 /* mogenerator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF38B57D169BD56600EEA24D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF38B58E169BD56600EEA24D /* InfoPlist.strings in Resources */,
+				BF9A73A71802D07000E1E8A2 /* FileToUpload.txt in Resources */,
+				BF38B596169BD56600EEA24D /* Default.png in Resources */,
+				BF38B598169BD56600EEA24D /* Default@2x.png in Resources */,
+				BF38B59A169BD56600EEA24D /* Default-568h@2x.png in Resources */,
+				BF38B59D169BD56600EEA24D /* MainStoryboard_iPhone.storyboard in Resources */,
+				BF38B5A0169BD56600EEA24D /* MainStoryboard_iPad.storyboard in Resources */,
+				BF65BD4016AB5DB700B94AEF /* SugarSyncRefreshTokenRequest.xml in Resources */,
+				BF65BD4216AB7E4E00B94AEF /* SugarSyncAccessTokenRequest.xml in Resources */,
+				BF6D139616BA3ABD001CD0EE /* FileBrowser.storyboard in Resources */,
+				BF048E7616BBBB7F002549B2 /* WebDAVMetadataRequest.xml in Resources */,
+				BF66E59A16D370C200A4455D /* SugarSyncLoginForm.json in Resources */,
+				BF66E59D16D3756700A4455D /* SugarSync.png in Resources */,
+				BF66E59E16D3756700A4455D /* SugarSync@2x.png in Resources */,
+				BF74AAAA17ECEA0400E44DB3 /* local-icon@2x.png in Resources */,
+				BFEC9BBE16D398390045E77C /* WebDAVServerForm.json in Resources */,
+				BFEC9BC116D3A2B50045E77C /* WebDAV.png in Resources */,
+				BF74AAA617ECCCFF00E44DB3 /* google-drive-icon@2x.png in Resources */,
+				BFEC9BC216D3A2B50045E77C /* WebDAV@2x.png in Resources */,
+				BF74AAA217ECCCEF00E44DB3 /* webdav-icon@2x.png in Resources */,
+				BF74AA9A17ECCCC900E44DB3 /* dropbox-icon@2x.png in Resources */,
+				BF2006D916E2009B0082510E /* Dropbox.png in Resources */,
+				BF2006DB16E200A20082510E /* Dropbox@2x.png in Resources */,
+				BF74AA9E17ECCCDF00E44DB3 /* sugarsync-icon@2x.png in Resources */,
+				BF2006E616E2254E0082510E /* GDImageCell.xib in Resources */,
+				BF703E2717B0683A00978241 /* SugarSyncCreateFileRequest.xml in Resources */,
+				BFE9D1FD17C9E4F90027E536 /* SugarSyncCopyFileRequest.xml in Resources */,
+				BF74AAA117ECCCEF00E44DB3 /* webdav-icon.png in Resources */,
+				BF74AAA917ECEA0400E44DB3 /* local-icon.png in Resources */,
+				BFE8499317D3020800216B3E /* GoogleDrive.png in Resources */,
+				BFE8499417D3020800216B3E /* GoogleDrive@2x.png in Resources */,
+				BF74AA9917ECCCC900E44DB3 /* dropbox-icon.png in Resources */,
+				BF3FFDF417D322B400C74DB7 /* GDMasterViewController.storyboard in Resources */,
+				BF74AA9D17ECCCDF00E44DB3 /* sugarsync-icon.png in Resources */,
+				BF74AAA517ECCCFF00E44DB3 /* google-drive-icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		694D94FE42474A21BA2ED3B1 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		BFBCD68F179785B500305B86 /* mogenerator */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = mogenerator;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "export PATH=$PATH:/usr/local/bin\nmogenerator -m \"GDFileManagerMetadataCache.xcdatamodeld\" --template-var arc=true\nmogenerator -m \"GDFileManagerDataCache.xcdatamodeld\" --template-var arc=true\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF38B57B169BD56600EEA24D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF38B590169BD56600EEA24D /* main.m in Sources */,
+				BF38B594169BD56600EEA24D /* GDAppDelegate.m in Sources */,
+				BF38B5A3169BD56600EEA24D /* GDMasterViewController.m in Sources */,
+				BF38B5A6169BD56600EEA24D /* GDDetailViewController.m in Sources */,
+				BF5D4AFE169EB6AD005E896E /* GDFileManager.m in Sources */,
+				BF5D4B3C169F995E005E896E /* GDAPIToken.m in Sources */,
+				BF5D4BC916A26551005E896E /* GDDropboxURLMetadata.m in Sources */,
+				BF2E2E1D16A664C4004A5DB1 /* GDRetainingMetadataCache.m in Sources */,
+				BFF7C19316A78A26004E97F6 /* GDLayeredMetadataCache.m in Sources */,
+				BF29898316AA9860007A444F /* GDSugarSyncAPIToken.m in Sources */,
+				BFD22F0316AF873500BC5CB8 /* GDDropboxClient.m in Sources */,
+				BFD22F0716AF89CD00BC5CB8 /* GDClientManager.m in Sources */,
+				BFD22F0A16AF89DF00BC5CB8 /* GDDropboxClientManager.m in Sources */,
+				BFD22F0D16AF8E0800BC5CB8 /* GDDropboxCredential.m in Sources */,
+				BFD22F1316AFA3BE00BC5CB8 /* GDDropboxAccountInfo.m in Sources */,
+				BFD22F1716AFB3EF00BC5CB8 /* GDDropboxMetadata.m in Sources */,
+				BFBDD27D16B1EC6C005AF6DE /* GDDropboxAPIToken.m in Sources */,
+				BF54567A16B337ED005E4715 /* GDFileServiceManager.m in Sources */,
+				BF54567F16B33C63005E4715 /* GDFileService.m in Sources */,
+				BF54568216B343A0005E4715 /* GDFileServiceSession.m in Sources */,
+				BF54569716B34626005E4715 /* GDDropboxFileService.m in Sources */,
+				BF54569A16B36517005E4715 /* GDRemoteFileService.m in Sources */,
+				BF5456AE16B37B78005E4715 /* GDClientCredential.m in Sources */,
+				BF5456B916B3A3DE005E4715 /* GDHTTPClient.m in Sources */,
+				BFB5B50416B506210049B1F8 /* GDRemoteFileServiceSession.m in Sources */,
+				BFCA229B16B509710015B1BF /* GDDropboxFileServiceSession.m in Sources */,
+				BFCA22A916B5218F0015B1BF /* GDSugarSyncCredential.m in Sources */,
+				BFCA22AC16B523F10015B1BF /* GDSugarSyncClientManager.m in Sources */,
+				BFCA22B116B5259C0015B1BF /* GDSugarSyncClient.m in Sources */,
+				BF087ACD16B60432000F1A9E /* GDSugarSyncAccountInfo.m in Sources */,
+				BF087AD016B604E3000F1A9E /* GDDictionaryBackedObject.m in Sources */,
+				BF087AD616B66E7E000F1A9E /* GDSugarSyncMetadata.m in Sources */,
+				BF087ADA16B72A3E000F1A9E /* GDSugarSyncFileService.m in Sources */,
+				BF087ADD16B72B2D000F1A9E /* GDSugarSyncFileServiceSession.m in Sources */,
+				BF087AE016B72CD1000F1A9E /* GDSugarSyncURLMetadata.m in Sources */,
+				BF6D139916BA3AEA001CD0EE /* GDFileServiceSessionListController.m in Sources */,
+				BF5EBC1C16BB4F4800421884 /* GDWebDAVCredential.m in Sources */,
+				BF5EBC2016BB510000421884 /* GDWebDAVClientManager.m in Sources */,
+				BF5EBC2316BB52E400421884 /* GDWebDAVClient.m in Sources */,
+				BFEBCDD116BB7F3A00F628B1 /* GDWebDAVMetadata.m in Sources */,
+				BFC2FED416BFABB900A1041F /* GDWebDAVURLMetadata.m in Sources */,
+				BFC2FED716BFC88500A1041F /* GDWebDAVFileService.m in Sources */,
+				BFC2FEDD16C06D5200A1041F /* GDWebDAVFileServiceSession.m in Sources */,
+				BF66E59816D36C6B00A4455D /* GDLoginFormViewController.m in Sources */,
+				BF2006DE16E206C40082510E /* GDFileServiceViewController.m in Sources */,
+				BF2006E416E207F20082510E /* GDImageCell.m in Sources */,
+				BF39FAD2176454CD0027358D /* GDWebLoginViewController.m in Sources */,
+				BF3B626D17708EE6008FB4D3 /* GDWebLoginController.m in Sources */,
+				BF400D5D1771E555002ECE29 /* GDWebLoginControllerDefaultDelegate.m in Sources */,
+				BF596B291774379D00C0C58B /* GDURLUtilities.m in Sources */,
+				BF028B7F1778663C00843D0E /* GDGoogleDriveClientManager.m in Sources */,
+				BF028B82177866AC00843D0E /* GDOAuth2Credential.m in Sources */,
+				BF028B85177866CD00843D0E /* GDGoogleDriveAPIToken.m in Sources */,
+				BF028B8F1778748600843D0E /* GDGoogleDriveClient.m in Sources */,
+				BF028B9217787D2400843D0E /* GDGoogleDriveAccountInfo.m in Sources */,
+				BFABDF71177A8CAF005CA7EE /* GDGoogleDriveMetadata.m in Sources */,
+				BF474C78177C60F400BDAE73 /* GDGoogleDriveChange.m in Sources */,
+				BF474C80177E8FBB00BDAE73 /* GDGoogleDriveURLMetadata.m in Sources */,
+				BF474C83177E9CD700BDAE73 /* GDGoogleDriveFileService.m in Sources */,
+				BF474C86177E9D7200BDAE73 /* GDGoogleDriveFileServiceSession.m in Sources */,
+				BF83757C178573CE0055ACF4 /* GDHTTPOperation.m in Sources */,
+				BF83757F1785A45D0055ACF4 /* GDAccessTokenClientCredential.m in Sources */,
+				BFA7309F1787E16A00DBD673 /* GDParentOperation.m in Sources */,
+				BFB7ED0E178ED2D5003DEE44 /* GDCredentialManager.m in Sources */,
+				BFB7ED12178EE284003DEE44 /* GDKeychainCredentialManager.m in Sources */,
+				BF6FE4911791308C006E8DE9 /* GDFileServiceManager+AutoRegistration.m in Sources */,
+				BFCC67A71793D37100C4B701 /* GDFileTreeNode.m in Sources */,
+				BFCC67AA1793D9EF00C4B701 /* GDDiscardingMetadataCache.m in Sources */,
+				BF6FE49617940519006E8DE9 /* GDAbstractMetadataCache.m in Sources */,
+				BF816F03179625B000D22F81 /* GDURLMetadata.m in Sources */,
+				BFBCD68417977ABD00305B86 /* GDCoreDataMetadataCache.m in Sources */,
+				BFBCD68A17977D6D00305B86 /* GDFileManagerMetadataCache.xcdatamodeld in Sources */,
+				BFBCD6951797870300305B86 /* GDCoreDataFileNode.m in Sources */,
+				BFBCD6961797870300305B86 /* GDCoreDataMetadata.m in Sources */,
+				BFBCD69C1797871600305B86 /* _GDCoreDataFileNode.m in Sources */,
+				BFE13B9617E4F0CE008F7ABC /* GDMultiMap.m in Sources */,
+				BFBCD69D1797871600305B86 /* _GDCoreDataMetadata.m in Sources */,
+				BF76EA3317AA4A850088F110 /* GDFileManagerDataCache.xcdatamodeld in Sources */,
+				BF76EA3717AA4DD40088F110 /* _GDFileManagerCachedFile.m in Sources */,
+				BF76EA3B17AA4E0E0088F110 /* GDFileManagerCachedFile.m in Sources */,
+				BF76EA3E17AA4F210088F110 /* GDFileManagerDataCacheCoordinator.m in Sources */,
+				BF2E8C2D17ACE79C00901951 /* GDDropboxUploadState.m in Sources */,
+				BFBA948717ADD898008265DB /* GDDropboxChunkedUploadOperation.m in Sources */,
+				BF703E2017AFCBC000978241 /* GDFileManagerCachedDownloadOperation.m in Sources */,
+				BF703E2B17B0D18600978241 /* GDSugarSyncUploadOperation.m in Sources */,
+				BF703E2E17B0D28000978241 /* GDSugarSyncUploadState.m in Sources */,
+				BF22DEC617B3BEC200B18505 /* GDSugarSyncDownloadOperation.m in Sources */,
+				BF7A3D0617B604C600BB6C0F /* GDGoogleDriveChunkedUploadOperation.m in Sources */,
+				BF7A3D0917B60BF400BB6C0F /* GDGoogleDriveUploadState.m in Sources */,
+				BFA9891B17B770CB000B78F4 /* GDFileManagerUploadState.m in Sources */,
+				BF2AD8B817B914A100EF42A2 /* GDWebDAVUploadOperation.m in Sources */,
+				BF7F567617C03B6400D977B8 /* GDFileManagerDownloadOperation.m in Sources */,
+				BF7F567D17C0526800D977B8 /* GDFileManagerUploadOperation.m in Sources */,
+				BF7F568117C0A10300D977B8 /* GDFileManagerPersistentUploadOperation.m in Sources */,
+				BF7F568517C0A40900D977B8 /* _GDFileManagerPendingUpload.m in Sources */,
+				BF7F568817C0A41600D977B8 /* GDFileManagerPendingUpload.m in Sources */,
+				BF7F568B17C0A49F00D977B8 /* GDPersistentUploadDestination.m in Sources */,
+				BF6449CD17C48BB6002723A2 /* AFHTTPRequestOperation+GDFileManager.m in Sources */,
+				BF6449D017C49F5C002723A2 /* GDFileManagerAlias.m in Sources */,
+				BF2985E917CB424D0030C53E /* GDLocalURLMetadata.m in Sources */,
+				BF2985EC17CB46470030C53E /* GDLocalFileService.m in Sources */,
+				BF2985EF17CB477E0030C53E /* GDLocalFileServiceSession.m in Sources */,
+				BFE8498D17D2FEE100216B3E /* AsyncSequentialEnumeration.m in Sources */,
+				BFE8499017D2FF6000216B3E /* GDKeyboardDismissingNavigationController.m in Sources */,
+				BF3FFDF217D31DF400C74DB7 /* GDFileListViewController.m in Sources */,
+				BF3FFDF717D3402600C74DB7 /* GDFileManagerResourceBundle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF38B58C169BD56600EEA24D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF38B58D169BD56600EEA24D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BF38B59B169BD56600EEA24D /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF38B59C169BD56600EEA24D /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		BF38B59E169BD56600EEA24D /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF38B59F169BD56600EEA24D /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF38B5BC169BD56600EEA24D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF38B5BD169BD56600EEA24D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF38B5BF169BD56600EEA24D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GDFileManagerExample/GDFileManagerExample-Prefix.pch";
+				INFOPLIST_FILE = "GDFileManagerExample/GDFileManagerExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BF38B5C0169BD56600EEA24D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GDFileManagerExample/GDFileManagerExample-Prefix.pch";
+				INFOPLIST_FILE = "GDFileManagerExample/GDFileManagerExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BFBCD68D179785AF00305B86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Debug;
+		};
+		BFBCD68E179785AF00305B86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = "armv7 armv7s";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF38B579169BD56600EEA24D /* Build configuration list for PBXProject "GDFileManagerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF38B5BC169BD56600EEA24D /* Debug */,
+				BF38B5BD169BD56600EEA24D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF38B5BE169BD56600EEA24D /* Build configuration list for PBXNativeTarget "GDFileManagerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF38B5BF169BD56600EEA24D /* Debug */,
+				BF38B5C0169BD56600EEA24D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFBCD68C179785AF00305B86 /* Build configuration list for PBXAggregateTarget "mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFBCD68D179785AF00305B86 /* Debug */,
+				BFBCD68E179785AF00305B86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BF76EA3117AA4A850088F110 /* GDFileManagerDataCache.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BF7F568217C0A26500D977B8 /* GDFileManagerDataCache 2.xcdatamodel */,
+				BF76EA3217AA4A850088F110 /* GDFileManagerDataCache.xcdatamodel */,
+			);
+			currentVersion = BF7F568217C0A26500D977B8 /* GDFileManagerDataCache 2.xcdatamodel */;
+			path = GDFileManagerDataCache.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		BFBCD68817977D6D00305B86 /* GDFileManagerMetadataCache.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BFBCD690179786D600305B86 /* GDFileManagerMetadataCache 1.xcdatamodel */,
+				BFBCD68917977D6D00305B86 /* GDFileManagerMetadataCache.xcdatamodel */,
+			);
+			currentVersion = BFBCD690179786D600305B86 /* GDFileManagerMetadataCache 1.xcdatamodel */;
+			path = GDFileManagerMetadataCache.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BF38B576169BD56600EEA24D /* Project object */;
+}

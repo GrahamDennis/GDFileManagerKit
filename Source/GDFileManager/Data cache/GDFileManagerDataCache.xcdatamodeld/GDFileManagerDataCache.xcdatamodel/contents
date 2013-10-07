@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="GDFileManagerCachedFile" representedClassName="GDFileManagerCachedFile" syncable="YES">
+        <attribute name="cacheDirectoryPath" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="cacheFilePath" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="fileSize" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="lastAccess" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="metadataClassName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="metadataJSONData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="sourceURLString" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="versionIdentifier" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="GDFileManagerCachedFile" positionX="160" positionY="192" width="128" height="180"/>
+    </elements>
+</model>

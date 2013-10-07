@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CachedFile" representedClassName="GDFileManagerCachedFile" syncable="YES">
+        <attribute name="cacheDirectoryPath" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="cacheFilePath" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="downloadDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="fileSize" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="lastAccess" optional="YES" attributeType="Date" indexed="YES" syncable="YES"/>
+        <attribute name="metadataClassName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="metadataJSONData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="sourceURLString" optional="YES" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="versionIdentifier" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PendingUpload" representedClassName="GDFileManagerPendingUpload" syncable="YES">
+        <attribute name="sourceFilePath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uploadDestination" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="uploadOptions" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="uploadState" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CachedFile" positionX="160" positionY="192" width="128" height="180"/>
+        <element name="PendingUpload" positionX="160" positionY="192" width="128" height="105"/>
+    </elements>
+</model>
