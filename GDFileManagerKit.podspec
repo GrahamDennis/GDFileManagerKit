@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
                    NSFileManager-like API.
                    
                    Features of GDFileManagerKit include:
+                   
                    * Cached file metadata.  Old metadata is re-validated where possible making API calls more efficient.
                    * Cached file downloads.
                    * Chunked upload / downloads where available for reliability in intermittently connected environments.

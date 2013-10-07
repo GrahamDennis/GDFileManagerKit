@@ -25,7 +25,7 @@ static NSComparator metadataComparator = ^NSComparisonResult(GDURLMetadata *meta
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.detailViewController = (GDDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    self.detailViewController = (GDDetailViewController *)[[self.splitViewController.viewControllers lastObject] viewControllers][0];
 }
 
 #pragma mark - Table View
@@ -34,11 +34,17 @@ static NSComparator metadataComparator = ^NSComparisonResult(GDURLMetadata *meta
 {
     if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
         self.detailViewController.fileManager = self.fileManager;
-        self.detailViewController.detailItem = metadata;
+        UINavigationController *navController = [self.splitViewController.viewControllers lastObject];
+        
+        BOOL waitForAppear = ![[navController topViewController] isKindOfClass:[GDDetailViewController class]];
+        [self.detailViewController setDetailItem:metadata waitForAppear:waitForAppear];
+        if (waitForAppear) {
+            [(UINavigationController *)[self.splitViewController.viewControllers lastObject] popToRootViewControllerAnimated:YES];
+        }
     } else {
         GDDetailViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:NSStringFromClass([GDDetailViewController class])];
         detailViewController.fileManager = self.fileManager;
-        detailViewController.detailItem = metadata;
+        [detailViewController setDetailItem:metadata waitForAppear:YES];
         detailViewController.navigationItem.title = [metadata filename];
         [self.navigationController pushViewController:detailViewController animated:YES];
     }

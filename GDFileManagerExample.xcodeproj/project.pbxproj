@@ -174,6 +174,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B40AFA4830B4DBC9DC04C73 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		BF028B79177865D100843D0E /* GDGoogleDrive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDGoogleDrive.h; sourceTree = "<group>"; };
 		BF028B7D1778663C00843D0E /* GDGoogleDriveClientManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDGoogleDriveClientManager.h; sourceTree = "<group>"; };
 		BF028B7E1778663C00843D0E /* GDGoogleDriveClientManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDGoogleDriveClientManager.m; sourceTree = "<group>"; };
@@ -650,6 +651,7 @@
 				BF38B589169BD56600EEA24D /* GDFileManagerExample */,
 				BF38B582169BD56600EEA24D /* Frameworks */,
 				BF38B580169BD56600EEA24D /* Products */,
+				0B40AFA4830B4DBC9DC04C73 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1453,6 +1455,7 @@
 		};
 		BF38B5BF169BD56600EEA24D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B40AFA4830B4DBC9DC04C73 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GDFileManagerExample/GDFileManagerExample-Prefix.pch";
@@ -1464,6 +1467,7 @@
 		};
 		BF38B5C0169BD56600EEA24D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B40AFA4830B4DBC9DC04C73 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GDFileManagerExample/GDFileManagerExample-Prefix.pch";
