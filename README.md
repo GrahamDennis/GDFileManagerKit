@@ -16,10 +16,6 @@ Features of GDFileManagerKit include:
 
 While GDFileManagerKit is currently beta-quality software, it is used in my app [PocketBib].
 
-## Screenshots from the demo app
-
-
-
 ## Usage
 
 Get the contents of a directory:
@@ -47,25 +43,13 @@ Check the local cache for the file, download it if it has been updated, and cach
     [fileManager enqueueFileManagerOperation:downloadOperation];
 
 
+See the included `GDFileManagerExample` for details.  To run the demo app, run `pod install`, and then open `GDFileManagerExample.xcworkspace` and build.
 
-
-See the included `GDFileManagerExample` for details.  To run the demo app, run `pod install`, and then open `GDFileManagerExample.xcworkspace`.
-
-
+More details to come.
 
 ## Requirements
 
-iOS 5.0+
-
-## Installation
-
-GDCoreDataConcurrencyDebugging is available through [CocoaPods](http://cocoapods.org), to install
-it simply add the following line to your Podfile:
-
-    pod "GDCoreDataConcurrencyDebugging"
-
-If you're installing manually, be sure to make sure ARC is turned off for the GDCoreDataConcurrencyDebugging sources (use the `-fno-objc-arc` flag).  GDCoreDataConcurrencyDebugging can be safely linked against ARC code.  See the Example.
-
+iOS 5.0+, various Pods.
 
 ## Author
 
