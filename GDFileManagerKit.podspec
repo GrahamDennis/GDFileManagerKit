@@ -24,9 +24,9 @@ Pod::Spec.new do |s|
 
   s.author       = { "Graham Dennis" => "graham@grahamdennis.me" }
 
-  s.platform     = :ios
+  s.platform     = :ios, "5.0"
 
-  s.source       = { :git => "http://github.com/GrahamDennis/GDFileManagerKit", :branch => "develop" }
+  s.source       = { :git => "https://github.com/GrahamDennis/GDCoreDataConcurrencyDebugging.git", :tag => s.version.to_s }
   s.source_files  = 'Source/**/*.{h,m}'
 
   s.resource_bundle = { 'GDFileManagerKit' => "Source/**/*.{png,xml,json,xcdatamodeld,storyboard,xib}"}
