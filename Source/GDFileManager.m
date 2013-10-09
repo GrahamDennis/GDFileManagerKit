@@ -637,7 +637,7 @@ static GDFileManagerDataCacheCoordinator *GDFileManagerSharedFileCacheCoordinato
         }];
     }, ^(BOOL completed) {
         if ([metadataHeirarchy count] == 0) {
-            if (failure) dispatch_async(dispatch_get_main_queue(),^{failure(lastError)});
+            if (failure) dispatch_async(dispatch_get_main_queue(),^{failure(lastError);});
             return;
         }
         
