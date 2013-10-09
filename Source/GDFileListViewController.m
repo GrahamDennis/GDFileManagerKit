@@ -60,7 +60,7 @@ static NSComparator metadataComparator = ^NSComparisonResult(GDURLMetadata *meta
 - (GDURLMetadata *)metadataForIndexPath:(NSIndexPath *)indexPath
 {
     NSArray *array = [self metadataArrayForSection:indexPath.section];
-    if ([array count] >= indexPath.row) return nil;
+    if ([array count] <= indexPath.row) return nil;
     return array[indexPath.row];
 }
 
