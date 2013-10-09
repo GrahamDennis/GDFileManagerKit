@@ -625,16 +625,21 @@ static GDFileManagerDataCacheCoordinator *GDFileManagerSharedFileCacheCoordinato
     }
     NSMutableArray *metadataHeirarchy = [NSMutableArray arrayWithCapacity:[urlsNeedingMetadata count]];
     
+    __block NSError *lastError = nil;
+    
     AsyncSequentialEnumeration([urlsNeedingMetadata reverseObjectEnumerator], ^(NSURL *url, AsyncSequentialEnumerationContinuationBlock continuationBlock) {
         [self getMetadataForURL:url success:^(GDURLMetadata *metadata) {
             [metadataHeirarchy addObject:metadata];
             continuationBlock(YES);
         } failure:^(NSError *error) {
+            lastError = error;
             continuationBlock(NO);
-            if (failure) dispatch_async(dispatch_get_main_queue(), ^{failure(error);});
         }];
     }, ^(BOOL completed) {
-        if (!completed) return;
+        if ([metadataHeirarchy count] == 0) {
+            if (failure) dispatch_async(dispatch_get_main_queue(),^{failure(lastError)});
+            return;
+        }
         
         GDFileManagerAlias *alias = [[GDFileManagerAlias alloc] initWithMetadataHeirarchy:metadataHeirarchy];
         if (success) dispatch_async(dispatch_get_main_queue(), ^{success(alias);});
