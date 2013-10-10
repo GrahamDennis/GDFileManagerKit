@@ -35,8 +35,7 @@ void __attribute__((overloadable)) AsyncSequentialEnumeration(NSEnumerator *enum
     dispatch_retain(queue);
 #endif
     
-    __weak __block ContinuationBlock weakContinuationBlock = nil;
-    void (^continuationBlock)(BOOL) = ^(BOOL keepGoing){
+    __block void (^continuationBlock)(BOOL) = ^(BOOL keepGoing){
         if (!keepGoing) {
             if (completionBlock) {
                 dispatch_async(queue, ^{
@@ -46,13 +45,13 @@ void __attribute__((overloadable)) AsyncSequentialEnumeration(NSEnumerator *enum
 #if !OS_OBJECT_USE_OBJC
             dispatch_release(queue);
 #endif
+            continuationBlock = nil;
             return;
         }
         id object = [enumerator nextObject];
-        ContinuationBlock strongContinuationBlock = weakContinuationBlock;
-        if (object && strongContinuationBlock) {
+        if (object && continuationBlock) {
             dispatch_async(queue, ^{
-                iterationBlock(object, strongContinuationBlock);
+                iterationBlock(object, continuationBlock);
             });
         } else {
             if (completionBlock)
@@ -60,9 +59,9 @@ void __attribute__((overloadable)) AsyncSequentialEnumeration(NSEnumerator *enum
 #if !OS_OBJECT_USE_OBJC
             dispatch_release(queue);
 #endif
+            continuationBlock = nil;
         }
     };
-    weakContinuationBlock = continuationBlock;
     
     continuationBlock(YES);
 }
