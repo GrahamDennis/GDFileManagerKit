@@ -45,7 +45,10 @@ void __attribute__((overloadable)) AsyncSequentialEnumeration(NSEnumerator *enum
 #if !OS_OBJECT_USE_OBJC
             dispatch_release(queue);
 #endif
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-retain-cycles"
             continuationBlock = nil;
+#pragma clang diagnostic pop
             return;
         }
         id object = [enumerator nextObject];
