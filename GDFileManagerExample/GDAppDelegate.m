@@ -25,8 +25,8 @@
                                        root:GDDropboxRootAppFolder];
     
     //
-    [GDGoogleDriveAPIToken registerTokenWithKey:@"293490489543.apps.googleusercontent.com"
-                                         secret:@"nWi6IQwzLTASHr8H6hhhDI-P"];
+    [GDGoogleDriveAPIToken registerTokenWithKey:@"293490489543-pju04q0lkiub60s1bunk54int7qfp76a.apps.googleusercontent.com"
+                                         secret:@"OEccbbRr0Aw2UtJoDLk6WV6R"];
     
     [GDSugarSyncAPIToken registerTokenWithKey:@"NTQxMjE1MzEzODExMzM0NjYyOTk"
                                        secret:@"Mjc0Y2Y5YWEzNjZiNGFhZTlmMzEyMzNmNjQ4MzJkOTk"
