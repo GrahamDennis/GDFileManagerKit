@@ -18,7 +18,7 @@
 @end
 
 #pragma clang diagnostic push
-//#pragma clang diagnostic ignored "-Wprotocol"
+#pragma clang diagnostic ignored "-Wprotocol"
 #pragma clang diagnostic ignored "-Wobjc-protocol-property-synthesis"
 @implementation GDURLMetadata
 #pragma clang diagnostic pop

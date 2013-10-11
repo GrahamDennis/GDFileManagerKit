@@ -54,4 +54,6 @@
     return [NSString stringWithFormat:@"%@: %@", [super description], [self.metadata description]];
 }
 
+- (BOOL)isValid { return [self webDAVPath] != nil; }
+
 @end

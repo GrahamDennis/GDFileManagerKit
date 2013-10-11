@@ -59,4 +59,6 @@
     return [NSString stringWithFormat:@"%@: %@", [super description], [self.metadataDictionary description]];
 }
 
+- (BOOL)isValid { return [self filename] != nil; }
+
 @end

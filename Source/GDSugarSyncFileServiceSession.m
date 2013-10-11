@@ -244,6 +244,7 @@
 - (NSURL *)clientURLByAppendingObjectID:(NSString *)objectID toClientURL:(NSURL *)parentURL
 {
     NSString *escapedObjectID = [objectID stringByReplacingOccurrencesOfString:@"/" withString:@"+"];
+    if (!escapedObjectID) return nil;
     
     return [parentURL URLByAppendingPathComponent:escapedObjectID];
 }
@@ -280,6 +281,7 @@
 - (GDURLMetadata *)clientMetadataWithCachedMetadata:(id<GDURLMetadata>)urlMetadata parentURL:(NSURL *)url
 {
     NSURL *clientURL = [self clientURLByAppendingObjectID:[(GDSugarSyncURLMetadata *)urlMetadata objectID] toClientURL:url];
+    if (!clientURL) return nil;
     
     return [[GDURLMetadata alloc] initWithURLMetadata:urlMetadata
                                             clientURL:clientURL

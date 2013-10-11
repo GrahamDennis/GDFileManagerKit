@@ -62,4 +62,6 @@ static NSString *const kSugarSyncFileVersionID = @"SugarSyncFileVersionID";
     return [NSString stringWithFormat:@"%@: %@", [super description], [self.metadata description]];
 }
 
+- (BOOL)isValid { return [self objectID] != nil; }
+
 @end

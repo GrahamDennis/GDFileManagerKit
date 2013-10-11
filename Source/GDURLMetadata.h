@@ -15,6 +15,7 @@
 @property (nonatomic, readonly, copy) NSString *fileVersionIdentifier;
 @property (nonatomic, readonly, copy) NSString *filename;
 @property (nonatomic, readonly, getter = isReadOnly) BOOL readOnly;
+- (BOOL)isValid;
 
 @end
 

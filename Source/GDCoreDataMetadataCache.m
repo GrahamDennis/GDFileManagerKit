@@ -138,7 +138,9 @@
             
             NSMutableArray *mutableMetadataArray = [NSMutableArray arrayWithCapacity:[results count]];
             for (GDCoreDataMetadata *storeMetadata in results) {
-                [mutableMetadataArray addObject:[self urlMetadataForStoreMetadata:storeMetadata]];
+                id <GDURLMetadata> metadata = [self urlMetadataForStoreMetadata:storeMetadata];
+                if (!metadata) return;
+                [mutableMetadataArray addObject:metadata];
             }
             metadataArray = [mutableMetadataArray copy];
             
@@ -167,7 +169,7 @@
     [self.managedObjectContext performBlock:^{
         GDCoreDataFileNode *fileNode = [self fileNodeForURL:url createIfNeeded:YES];
 
-        if (metadata) {
+        if (metadata && [metadata isValid]) {
             GDCoreDataMetadata *storeMetadata = fileNode.metadata;
             if (!storeMetadata) {
                 storeMetadata = [GDCoreDataMetadata insertInManagedObjectContext:self.managedObjectContext];
@@ -269,6 +271,8 @@
     if (metadataClass) {
         urlMetadata = [[metadataClass alloc] initWithMetadataDictionary:metadataDictionary];
     }
+    if (![urlMetadata isValid]) return nil;
+    
     return urlMetadata;
 }
 
