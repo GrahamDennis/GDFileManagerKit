@@ -5,5 +5,5 @@ pod "UIAlertView-Blocks"
 pod "AFKissXMLRequestOperation"
 pod "ISO8601DateFormatter"
 pod "QuickDialog", '0.8'
-pod 'AFOAuth2Client', :podspec => 'AFOAuth2Client.podspec'
+pod 'AFOAuth2Client', :podspec => 'Vendor/AFOAuth2Client.podspec'
 pod 'SSKeychain', '~> 1'
