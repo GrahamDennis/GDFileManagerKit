@@ -472,7 +472,7 @@
                                              success:^(AFHTTPRequestOperation *operation, DDXMLDocument *responseDocument) {
                                                  NSDictionary *httpHeaders = [[operation response] allHeaderFields];
                                                  NSString *newFileURLString = httpHeaders[@"Location"];
-                                                 NSString *newFileID = [[NSURL URLWithString:newFileURLString] path];
+                                                 NSString *newFileID = [(NSURL *)[NSURL URLWithString:newFileURLString] path];
                                                  if (success) success(newFileID);
                                              } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                                                  if (failure) failure(error);

@@ -18,7 +18,7 @@ static NSString *const GDFileServiceManagerDefaultPersistenceIdentifier = @"GDFi
 
 @interface GDFileServiceManager ()
 
-@property (nonatomic, assign, readonly) dispatch_queue_t private_queue;
+@property (nonatomic, readonly) dispatch_queue_t private_queue;
 @property (nonatomic, copy, readwrite) NSDictionary *keyedFileServices;
 
 @end
@@ -39,10 +39,12 @@ static NSString *const GDFileServiceManagerDefaultPersistenceIdentifier = @"GDFi
 
 - (void)dealloc
 {
+#if !OS_OBJECT_USE_OBJC
     if (self.private_queue) {
         dispatch_release(self.private_queue);
         _private_queue = nil;
     }
+#endif
     
     [[NSNotificationCenter defaultCenter] removeObserver:self];
 }

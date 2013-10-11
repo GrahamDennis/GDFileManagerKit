@@ -26,6 +26,7 @@
     return nil;
 }
 
+#if !OS_OBJECT_USE_OBJC
 - (void)dealloc
 {
     if (self.isolationQueue) {
@@ -37,6 +38,7 @@
         self.workQueue = NULL;
     }
 }
+#endif
 
 - (id)init
 {

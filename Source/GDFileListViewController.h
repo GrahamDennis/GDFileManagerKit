@@ -25,5 +25,7 @@
 - (void)fetchMetadataManager;
 - (void)didLoadDirectoryContents;
 - (void)pushViewControllerForFolderMetadata:(GDURLMetadata *)folderMetadata;
+- (GDURLMetadata *)metadataForIndexPath:(NSIndexPath *)indexPath;
+- (NSMutableArray *)metadataArrayForSection:(NSUInteger)section;
 
 @end

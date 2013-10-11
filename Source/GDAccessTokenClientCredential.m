@@ -11,7 +11,7 @@
 
 @interface GDAccessTokenClientCredential ()
 
-@property (nonatomic, assign) dispatch_queue_t private_queue;
+@property (nonatomic) dispatch_queue_t private_queue;
 @property (nonatomic, strong) GDAccessTokenClientCredential *refreshedCredential;
 
 @end
@@ -20,6 +20,7 @@
 
 @dynamic accessTokenExpirationDate; // must be provided by subclass
 
+#if !OS_OBJECT_USE_OBJC
 - (void)dealloc
 {
     if (self.private_queue) {
@@ -27,6 +28,7 @@
         self.private_queue = NULL;
     }
 }
+#endif
 
 - (id)initWithUserID:(NSString *)userID apiToken:(GDAPIToken *)apiToken
 {

@@ -10,7 +10,7 @@
 
 @interface GDParentOperation ()
 
-@property (nonatomic, assign) dispatch_queue_t private_queue;
+@property (nonatomic) dispatch_queue_t private_queue;
 @property (nonatomic, assign) BOOL isExecuting;
 @property (nonatomic, assign) BOOL isFinished;
 @property (nonatomic, strong) NSMutableArray *childOperations;
@@ -31,6 +31,7 @@ NSError *GDOperationCancelledError;
     }
 }
 
+#if !OS_OBJECT_USE_OBJC
 - (void)dealloc
 {
     if (self.private_queue) {
@@ -46,6 +47,7 @@ NSError *GDOperationCancelledError;
         _failureCallbackQueue = NULL;
     }
 }
+#endif
 
 - (id)init
 {
@@ -119,6 +121,7 @@ NSError *GDOperationCancelledError;
     });
 }
 
+#if !OS_OBJECT_USE_OBJC
 - (void)setSuccessCallbackQueue:(dispatch_queue_t)successCallbackQueue
 {
     dispatch_retain(successCallbackQueue);
@@ -127,6 +130,7 @@ NSError *GDOperationCancelledError;
     }
     _successCallbackQueue = successCallbackQueue;
 }
+#endif
 
 - (dispatch_queue_t)successCallbackQueue
 {
@@ -135,6 +139,7 @@ NSError *GDOperationCancelledError;
     return _successCallbackQueue;
 }
 
+#if !OS_OBJECT_USE_OBJC
 - (void)setFailureCallbackQueue:(dispatch_queue_t)failureCallbackQueue
 {
     dispatch_retain(failureCallbackQueue);
@@ -143,6 +148,7 @@ NSError *GDOperationCancelledError;
     }
     _failureCallbackQueue = failureCallbackQueue;
 }
+#endif
 
 - (dispatch_queue_t)failureCallbackQueue
 {

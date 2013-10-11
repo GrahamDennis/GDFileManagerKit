@@ -597,8 +597,10 @@ static GDFileManagerDataCacheCoordinator *GDFileManagerSharedFileCacheCoordinato
         
         dispatch_group_notify(group, results_queue, ^{
             if (success) success([results copy]);
+#if !OS_OBJECT_USE_OBJC
             dispatch_release(group);
             dispatch_release(results_queue);
+#endif
         });
     }
 }

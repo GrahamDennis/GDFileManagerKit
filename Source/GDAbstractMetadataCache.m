@@ -13,12 +13,13 @@
 
 @interface GDAbstractMetadataCache ()
 
-@property (nonatomic, assign) dispatch_queue_t isolationQueue;
+@property (nonatomic) dispatch_queue_t isolationQueue;
 
 @end
 
 @implementation GDAbstractMetadataCache
 
+#if !OS_OBJECT_USE_OBJC
 - (void)dealloc
 {
     if (self.isolationQueue) {
@@ -26,6 +27,7 @@
         self.isolationQueue = NULL;
     }
 }
+#endif
 
 - (id)init
 {

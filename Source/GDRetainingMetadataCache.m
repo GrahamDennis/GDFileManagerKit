@@ -12,12 +12,13 @@
 @interface GDRetainingMetadataCache ()
 
 @property (nonatomic, strong) NSMutableDictionary *dictionary;
-@property (nonatomic, assign) dispatch_queue_t accessQueue;
+@property (nonatomic) dispatch_queue_t accessQueue;
 
 @end
 
 @implementation GDRetainingMetadataCache
 
+#if !OS_OBJECT_USE_OBJC
 - (void)dealloc
 {
     if (self.accessQueue) {
@@ -25,6 +26,7 @@
         self.accessQueue = NULL;
     }
 }
+#endif
 
 - (id)init
 {
