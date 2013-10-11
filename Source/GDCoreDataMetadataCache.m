@@ -31,7 +31,7 @@
 @property (nonatomic, strong, readonly) NSPredicate *fetchNodeFromURLStringPredicateTemplate;
 @property (nonatomic, strong, readonly) NSPredicate *fetchNodesFromURLStringsPredicateTemplate;
 
-@property (nonatomic, assign) dispatch_queue_t workQueue;
+@property (nonatomic) dispatch_queue_t workQueue;
 
 @end
 
@@ -45,10 +45,12 @@
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     
+#if !OS_OBJECT_USE_OBJC
     if (self.workQueue) {
         dispatch_release(self.workQueue);
         self.workQueue = NULL;
     }
+#endif
 }
 
 - (id)init

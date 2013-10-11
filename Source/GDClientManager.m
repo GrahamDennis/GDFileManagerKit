@@ -22,7 +22,7 @@ static dispatch_queue_t manager_map_queue = nil;
 @interface GDClientManager ()
 
 @property (nonatomic, copy) NSArray *clientCredentials;
-@property (nonatomic, readonly, assign) dispatch_queue_t private_queue;
+@property (nonatomic, readonly) dispatch_queue_t private_queue;
 
 @end
 
@@ -91,6 +91,7 @@ static dispatch_queue_t manager_map_queue = nil;
 
 #pragma mark - Instance methods
 
+#if !OS_OBJECT_USE_OBJC
 - (void)dealloc
 {
     if (_private_queue) {
@@ -98,6 +99,7 @@ static dispatch_queue_t manager_map_queue = nil;
         _private_queue = NULL;
     }
 }
+#endif
 
 - (id)init
 {

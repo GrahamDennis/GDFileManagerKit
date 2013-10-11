@@ -41,6 +41,7 @@ static GDCredentialManager *sharedCredentialManager;
     return sharedCredentialManager;
 }
 
+#if !OS_OBJECT_USE_OBJC
 - (void)dealloc
 {
     if (self.isolationQueue) {
@@ -48,6 +49,7 @@ static GDCredentialManager *sharedCredentialManager;
         self.isolationQueue = NULL;
     }
 }
+#endif
 
 - (id)init
 {

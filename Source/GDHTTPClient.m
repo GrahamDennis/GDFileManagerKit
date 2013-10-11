@@ -51,6 +51,7 @@ BOOL GDIsErrorPermanentlyFatal(NSError *error)
 
 @implementation GDHTTPClient
 
+#if !OS_OBJECT_USE_OBJC
 - (void)dealloc
 {
     if (self.isolationQueue) {
@@ -62,6 +63,7 @@ BOOL GDIsErrorPermanentlyFatal(NSError *error)
         self.workQueue = NULL;
     }
 }
+#endif
 
 - (id)initWithBaseURL:(NSURL *)url
 {
