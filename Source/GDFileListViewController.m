@@ -150,6 +150,7 @@ static NSComparator metadataComparator = ^NSComparisonResult(GDURLMetadata *meta
         
         [self didLoadDirectoryContents];
     } failure:^(NSError *error) {
+        [self didFailToLoadDirectoryContentsWithError:error];
         NSLog(@"error: %@", error);
     }];
 }
@@ -162,6 +163,11 @@ static NSComparator metadataComparator = ^NSComparisonResult(GDURLMetadata *meta
 - (void)didLoadDirectoryContents
 {
     [self.tableView reloadData];
+}
+
+- (void)didFailToLoadDirectoryContentsWithError:(NSError *)error
+{
+    
 }
 
 @end
