@@ -85,6 +85,10 @@
             server = [server substringFromIndex:6];
         else if ([server hasPrefix:@"davs://"])
             server = [server substringFromIndex:7];
+        else if ([server hasPrefix:@"http://"])
+            server = [server substringFromIndex:7];
+        else if ([server hasPrefix:@"https://"])
+            server = [server substringFromIndex:8];
 
         NSString *username = result[@"username"];
         NSString *password = result[@"password"];
