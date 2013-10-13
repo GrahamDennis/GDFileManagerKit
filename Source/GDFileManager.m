@@ -227,7 +227,10 @@ static GDFileManagerDataCacheCoordinator *GDFileManagerSharedFileCacheCoordinato
     
     NSArray *directoryContents = [self.directoryResultsCache objectForKey:url];
     if (directoryContents && cachePolicy != GDFileManagerReloadRevalidatingCacheDataButReturnCacheIfOfflineAndIgnoreSessionCache) {
-        return success(directoryContents);
+        if ([directoryContents isKindOfClass:[NSArray class]])
+            return success(directoryContents);
+        else if ([directoryContents isKindOfClass:[NSError class]])
+            return failure((NSError *)directoryContents);
     }
     
     directoryContents = [self.sessionCache directoryContentsMetadataArrayForURL:canonicalURL];
@@ -270,6 +273,8 @@ static GDFileManagerDataCacheCoordinator *GDFileManagerSharedFileCacheCoordinato
                                                  [self.directoryResultsCache setObject:directoryContentsClientMetadata forKey:url];
                                                  return success(directoryContentsClientMetadata);
                                              }
+                                     } else {
+                                         [self.directoryResultsCache setObject:error forKey:url];
                                      }
                                      return failure(error);
                                  }];
