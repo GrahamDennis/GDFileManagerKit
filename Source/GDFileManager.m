@@ -640,7 +640,8 @@ static GDFileManagerDataCacheCoordinator *GDFileManagerSharedFileCacheCoordinato
             continuationBlock(YES);
         } failure:^(NSError *error) {
             lastError = error;
-            continuationBlock(NO);
+            [metadataHeirarchy removeAllObjects];
+            continuationBlock(YES);
         }];
     }, ^(BOOL completed) {
         if ([metadataHeirarchy count] == 0) {
