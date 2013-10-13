@@ -183,7 +183,7 @@
 
 - (NSURL *)canonicalURLForMetadata:(GDWebDAVMetadata *)metadata
 {
-    return [self canonicalURLByAppendingPath:metadata.href toURL:self.baseURL];
+    return [self canonicalURLByAppendingPath:[metadata.href stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding] toURL:self.baseURL];
 }
 
 - (GDURLMetadata *)clientMetadataForWebDAVMetadata:(GDWebDAVMetadata *)metadata
