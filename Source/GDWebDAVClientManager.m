@@ -80,6 +80,12 @@
         weakLoginController.loading = YES;
         
         NSString *server = result[@"server"];
+
+        if ([server hasPrefix:@"dav://"])
+            server = [server substringFromIndex:6];
+        else if ([server hasPrefix:@"davs://"])
+            server = [server substringFromIndex:7];
+
         NSString *username = result[@"username"];
         NSString *password = result[@"password"];
         
