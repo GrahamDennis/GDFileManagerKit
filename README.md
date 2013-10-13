@@ -13,7 +13,7 @@ Features of GDFileManagerKit include:
 * Copy/Delete/Move file operations.
 * Aliases to keep track of files if the user moves / renames them remotely (requires a file service that supports persistent file identifiers like Google Drive or SugarSync).
 
-GDFileManagerKit is currently beta-quality software, but I am using it in my app [PocketBib].
+GDFileManagerKit is currently beta-quality software, but I am using it in my app [PocketBib].  See my [blog post][blog-post] for details.
 
 ## Screenshots
 
@@ -85,3 +85,4 @@ GDFileManagerKit is available under the MIT license. See the LICENSE file for mo
 
 
 [PocketBib]: http://itunes.apple.com/app/pocketbib-for-bibtex-bibdesk/id524521749?ls=1&mt=8
+[blog-post]: http://www.grahamdennis.me/blog/2013/10/12/gdfilemanagerkit-a-consistent-ios-api-for-cloud-file-storage-services/
