@@ -89,7 +89,7 @@
         addToParent:(NSURL *)parentURL
 {
     NSParameterAssert(url);
-    if (![metadata isValid]) return;
+    if (!metadata && !contents) return;
     
     dispatch_barrier_async(self.isolationQueue, ^{
         GDFileTreeNode *treeNode = [self treeNodeForURL:url] ?: [[GDFileTreeNode alloc] initWithURL:url];

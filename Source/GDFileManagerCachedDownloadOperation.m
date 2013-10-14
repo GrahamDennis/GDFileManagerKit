@@ -18,6 +18,7 @@
 
 @property (nonatomic, strong) NSURL *canonicalURL;
 @property (nonatomic, strong) GDFileServiceSession *session;
+@property (nonatomic) BOOL didFetchNewFileVersion;
 
 @end
 
@@ -35,7 +36,7 @@
 {
     typeof(success) successWrapper = ^(NSURL *localURL, GDURLMetadata *metadata){
         NSURL *cacheURL = localURL;
-        if ([self.session shouldCacheResults]) {
+        if ([self didFetchNewFileVersion] && [self.session shouldCacheResults]) {
             cacheURL = [[GDFileManager sharedFileCache] moveLocalURL:localURL
                                                      intoCacheForURL:self.canonicalURL
                                                             metadata:metadata];
@@ -92,16 +93,19 @@
         [self.fileManager getLatestVersionIdentifierForURL:self.sourceURL cachePolicy:self.cachePolicy
                                                    success:^(NSString *versionIdentifier) {
                                                        if ([versionIdentifier isEqualToString:cachedMetadata.fileVersionIdentifier]) {
+                                                           self.didFetchNewFileVersion = NO;
                                                            GDURLMetadata *clientMetadata = [fileManager clientMetadataForURLMetadata:cachedMetadata
                                                                                                                            clientURL:self.sourceURL
                                                                                                                   fileServiceSession:session
                                                                                                                                cache:nil];
                                                            return self.success(cacheURL, clientMetadata);
                                                        } else {
+                                                           self.didFetchNewFileVersion = YES;
                                                            return [self downloadFile];
                                                        }
                                                    } failure:self.failure];
     } else {
+        self.didFetchNewFileVersion = YES;
         [self downloadFile];
     }
 }
