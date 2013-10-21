@@ -13,6 +13,7 @@
 @interface GDDetailViewController () <UIDocumentInteractionControllerDelegate>
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
 @property (strong, nonatomic) GDFileManagerDownloadOperation *downloadOperation;
+@property (nonatomic) BOOL waitForAppear;
 
 - (void)configureView;
 @end
@@ -23,11 +24,11 @@
 
 #pragma mark - Managing the detail item
 
-- (void)setDetailItem:(id)newDetailItem
+- (void)setDetailItem:(id)newDetailItem waitForAppear:(BOOL)waitForAppear
 {
     if (_detailItem != newDetailItem) {
         _detailItem = newDetailItem;
-        
+        _waitForAppear = waitForAppear;
         // Update the view.
         [self configureView];
     }
@@ -41,9 +42,12 @@
 {
     [super viewDidAppear:animated];
     
-    // Begin the download operation
-    if (self.downloadOperation) {
-        [self.fileManager enqueueFileManagerOperation:self.downloadOperation];
+    if (_waitForAppear) {
+        // Begin the download operation on appear
+        if (self.downloadOperation) {
+            [self.fileManager enqueueFileManagerOperation:self.downloadOperation];
+        }
+        _waitForAppear = NO;
     }
     
 }
@@ -101,6 +105,10 @@
                 [weakSelf.downloadProgressView setProgress:progressFraction animated:YES];
             }];
             
+            if (!self.waitForAppear) {
+                [self.fileManager enqueueFileManagerOperation:self.downloadOperation];
+            }
+
         }
         
         

@@ -2,14 +2,15 @@
 Pod::Spec.new do |s|
 
   s.name         = "GDFileManagerKit"
-  s.version      = "0.0.1"
-  s.summary      = "A consistent iOS API to cloud file storage services including Dropbox and Google Drive."
+  s.version      = "0.0.2"
+  s.summary      = "A consistent iOS API for cloud file storage services including Dropbox and Google Drive."
 
   s.description  = <<-DESC
                    GDFileManagerKit lets you access Dropbox, Google Drive, SugarSync and WebDAV with a consistent,
                    NSFileManager-like API.
                    
                    Features of GDFileManagerKit include:
+                   
                    * Cached file metadata.  Old metadata is re-validated where possible making API calls more efficient.
                    * Cached file downloads.
                    * Chunked upload / downloads where available for reliability in intermittently connected environments.
@@ -23,9 +24,9 @@ Pod::Spec.new do |s|
 
   s.author       = { "Graham Dennis" => "graham@grahamdennis.me" }
 
-  s.platform     = :ios
+  s.platform     = :ios, "5.0"
 
-  s.source       = { :git => "http://github.com/GrahamDennis/GDFileManagerKit", :branch => "develop" }
+  s.source       = { :git => "https://github.com/GrahamDennis/GDFileManagerKit.git", :tag => s.version.to_s }
   s.source_files  = 'Source/**/*.{h,m}'
 
   s.resource_bundle = { 'GDFileManagerKit' => "Source/**/*.{png,xml,json,xcdatamodeld,storyboard,xib}"}
@@ -37,7 +38,7 @@ Pod::Spec.new do |s|
 
   s.requires_arc = true
 
-  s.dependency 'AFNetworking', '~> 1'
+  s.dependency 'AFNetworking', '~> 1.3'
   s.dependency 'SSKeychain'
   s.dependency 'UIAlertView-Blocks'
   s.dependency 'AFKissXMLRequestOperation'

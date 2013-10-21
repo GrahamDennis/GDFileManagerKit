@@ -19,4 +19,6 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 @property (weak, nonatomic) IBOutlet UIProgressView *downloadProgressView;
+
+- (void)setDetailItem:(GDURLMetadata *)detailItem waitForAppear:(BOOL)waitForAppear;
 @end

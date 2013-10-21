@@ -174,6 +174,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B40AFA4830B4DBC9DC04C73 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		BF028B79177865D100843D0E /* GDGoogleDrive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDGoogleDrive.h; sourceTree = "<group>"; };
 		BF028B7D1778663C00843D0E /* GDGoogleDriveClientManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDGoogleDriveClientManager.h; sourceTree = "<group>"; };
 		BF028B7E1778663C00843D0E /* GDGoogleDriveClientManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDGoogleDriveClientManager.m; sourceTree = "<group>"; };
@@ -487,8 +488,9 @@
 				BF028B7B1778660400843D0E /* Controller */,
 				BF028B7C1778661B00843D0E /* Resources */,
 			);
-			path = "Google Drive";
-			sourceTree = "<group>";
+			name = "Google Drive";
+			path = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 		BF028B7A177865F200843D0E /* Model */ = {
 			isa = PBXGroup;
@@ -507,8 +509,9 @@
 				BF7A3D0A17B60C8B00BB6C0F /* GDGoogleDriveUploadState_Private.h */,
 				BF7A3D0817B60BF400BB6C0F /* GDGoogleDriveUploadState.m */,
 			);
-			path = Model;
-			sourceTree = "<group>";
+			name = Model;
+			path = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 		BF028B7B1778660400843D0E /* Controller */ = {
 			isa = PBXGroup;
@@ -518,8 +521,9 @@
 				BF028B8D1778748600843D0E /* GDGoogleDriveClient.h */,
 				BF028B8E1778748600843D0E /* GDGoogleDriveClient.m */,
 			);
-			path = Controller;
-			sourceTree = "<group>";
+			name = Controller;
+			path = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 		BF028B7C1778661B00843D0E /* Resources */ = {
 			isa = PBXGroup;
@@ -529,8 +533,9 @@
 				BF74AAA317ECCCFF00E44DB3 /* google-drive-icon.png */,
 				BF74AAA417ECCCFF00E44DB3 /* google-drive-icon@2x.png */,
 			);
-			path = Resources;
-			sourceTree = "<group>";
+			name = Resources;
+			path = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 		BF048E7316BBBB1F002549B2 /* Resources */ = {
 			isa = PBXGroup;
@@ -542,8 +547,9 @@
 				BF74AA9F17ECCCEF00E44DB3 /* webdav-icon.png */,
 				BF74AAA017ECCCEF00E44DB3 /* webdav-icon@2x.png */,
 			);
-			path = Resources;
-			sourceTree = "<group>";
+			name = Resources;
+			path = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 		BF087AC916B60417000F1A9E /* Model */ = {
 			isa = PBXGroup;
@@ -560,7 +566,7 @@
 				BF703E2F17B0D2E600978241 /* GDSugarSyncUploadState_Private.h */,
 				BF703E2D17B0D28000978241 /* GDSugarSyncUploadState.m */,
 			);
-			path = Model;
+			name = Model;
 			sourceTree = "<group>";
 		};
 		BF087AD716B72A1C000F1A9E /* SugarSync */ = {
@@ -574,8 +580,9 @@
 				BF087ADB16B72B2D000F1A9E /* GDSugarSyncFileServiceSession.h */,
 				BF087ADC16B72B2D000F1A9E /* GDSugarSyncFileServiceSession.m */,
 			);
-			path = SugarSync;
-			sourceTree = "<group>";
+			name = SugarSync;
+			path = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 		BF2006D716E2008A0082510E /* Resources */ = {
 			isa = PBXGroup;
@@ -585,7 +592,7 @@
 				BF74AA9717ECCCC900E44DB3 /* dropbox-icon.png */,
 				BF74AA9817ECCCC900E44DB3 /* dropbox-icon@2x.png */,
 			);
-			path = Resources;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		BF2006DF16E206CB0082510E /* GDFileServiceManager */ = {
@@ -604,8 +611,9 @@
 				BF6D139716BA3AEA001CD0EE /* GDFileServiceSessionListController.h */,
 				BF6D139816BA3AEA001CD0EE /* GDFileServiceSessionListController.m */,
 			);
-			path = GDFileServiceManager;
-			sourceTree = "<group>";
+			name = GDFileServiceManager;
+			path = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 		BF2985E617CB42280030C53E /* Local */ = {
 			isa = PBXGroup;
@@ -619,8 +627,9 @@
 				BF2985ED17CB477E0030C53E /* GDLocalFileServiceSession.h */,
 				BF2985EE17CB477E0030C53E /* GDLocalFileServiceSession.m */,
 			);
-			path = Local;
-			sourceTree = "<group>";
+			name = Local;
+			path = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 		BF2AD8B517B9148600EF42A2 /* Operations */ = {
 			isa = PBXGroup;
@@ -628,8 +637,9 @@
 				BF2AD8B617B914A100EF42A2 /* GDWebDAVUploadOperation.h */,
 				BF2AD8B717B914A100EF42A2 /* GDWebDAVUploadOperation.m */,
 			);
-			path = Operations;
-			sourceTree = "<group>";
+			name = Operations;
+			path = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 		BF38B574169BD56600EEA24D = {
 			isa = PBXGroup;
@@ -650,6 +660,7 @@
 				BF38B589169BD56600EEA24D /* GDFileManagerExample */,
 				BF38B582169BD56600EEA24D /* Frameworks */,
 				BF38B580169BD56600EEA24D /* Products */,
+				0B40AFA4830B4DBC9DC04C73 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -718,8 +729,9 @@
 				BF816F0417962B5C00D22F81 /* GDURLMetadata_Private.h */,
 				BF816F02179625B000D22F81 /* GDURLMetadata.m */,
 			);
-			path = Metadata;
-			sourceTree = "<group>";
+			name = Metadata;
+			path = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 		BF474C7D177E8F8200BDAE73 /* Google Drive */ = {
 			isa = PBXGroup;
@@ -731,8 +743,9 @@
 				BF474C84177E9D7200BDAE73 /* GDGoogleDriveFileServiceSession.h */,
 				BF474C85177E9D7200BDAE73 /* GDGoogleDriveFileServiceSession.m */,
 			);
-			path = "Google Drive";
-			sourceTree = "<group>";
+			name = "Google Drive";
+			path = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 		BF5D4B00169EB6B5005E896E /* GDFileManager */ = {
 			isa = PBXGroup;
@@ -756,8 +769,8 @@
 				BF5D4B4416A01C7B005E896E /* File Services */,
 			);
 			name = GDFileManager;
-			path = Source/GDFileManager;
-			sourceTree = "<group>";
+			path = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 		BF5D4B4416A01C7B005E896E /* File Services */ = {
 			isa = PBXGroup;
@@ -776,8 +789,9 @@
 				BFC2FED016BFAB9B00A1041F /* WebDAV */,
 				BF474C7D177E8F8200BDAE73 /* Google Drive */,
 			);
-			path = "File Services";
-			sourceTree = "<group>";
+			name = "File Services";
+			path = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 		BF5D4BDF16A55A6D005E896E /* Cache */ = {
 			isa = PBXGroup;
@@ -797,8 +811,8 @@
 				BFF7C19216A78A26004E97F6 /* GDLayeredMetadataCache.m */,
 			);
 			name = Cache;
-			path = "Metadata cache";
-			sourceTree = "<group>";
+			path = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 		BF5EBC1716BB4EFD00421884 /* WebDAV */ = {
 			isa = PBXGroup;
@@ -809,8 +823,9 @@
 				BF5EBC1D16BB50BB00421884 /* Controller */,
 				BF048E7316BBBB1F002549B2 /* Resources */,
 			);
-			path = WebDAV;
-			sourceTree = "<group>";
+			name = WebDAV;
+			path = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 		BF5EBC1916BB4F0F00421884 /* Model */ = {
 			isa = PBXGroup;
@@ -820,8 +835,9 @@
 				BFEBCDCF16BB7F3A00F628B1 /* GDWebDAVMetadata.h */,
 				BFEBCDD016BB7F3A00F628B1 /* GDWebDAVMetadata.m */,
 			);
-			path = Model;
-			sourceTree = "<group>";
+			name = Model;
+			path = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 		BF5EBC1D16BB50BB00421884 /* Controller */ = {
 			isa = PBXGroup;
@@ -831,8 +847,9 @@
 				BF5EBC2116BB52E400421884 /* GDWebDAVClient.h */,
 				BF5EBC2216BB52E400421884 /* GDWebDAVClient.m */,
 			);
-			path = Controller;
-			sourceTree = "<group>";
+			name = Controller;
+			path = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 		BF65BD3D16AB5D9800B94AEF /* Resources */ = {
 			isa = PBXGroup;
@@ -847,8 +864,9 @@
 				BF703E2617B0683A00978241 /* SugarSyncCreateFileRequest.xml */,
 				BFE9D1FC17C9E4F90027E536 /* SugarSyncCopyFileRequest.xml */,
 			);
-			path = Resources;
-			sourceTree = "<group>";
+			name = Resources;
+			path = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 		BF66E59516D36AC400A4455D /* Login Controllers */ = {
 			isa = PBXGroup;
@@ -866,7 +884,7 @@
 				BF39FAD0176454CD0027358D /* GDWebLoginViewController.m */,
 			);
 			name = "Login Controllers";
-			path = "Source/Login Controllers";
+			path = Source;
 			sourceTree = "<group>";
 		};
 		BF703E2817B0D16D00978241 /* Operations */ = {
@@ -877,7 +895,7 @@
 				BF703E2917B0D18600978241 /* GDSugarSyncUploadOperation.h */,
 				BF703E2A17B0D18600978241 /* GDSugarSyncUploadOperation.m */,
 			);
-			path = Operations;
+			name = Operations;
 			sourceTree = "<group>";
 		};
 		BF76EA3017AA35920088F110 /* Data cache */ = {
@@ -892,8 +910,9 @@
 				BF76EA3C17AA4F210088F110 /* GDFileManagerDataCacheCoordinator.h */,
 				BF76EA3D17AA4F210088F110 /* GDFileManagerDataCacheCoordinator.m */,
 			);
-			path = "Data cache";
-			sourceTree = "<group>";
+			name = "Data cache";
+			path = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 		BF76EA3417AA4DCA0088F110 /* Machine */ = {
 			isa = PBXGroup;
@@ -912,8 +931,9 @@
 				BF7A3D0417B604C600BB6C0F /* GDGoogleDriveChunkedUploadOperation.h */,
 				BF7A3D0517B604C600BB6C0F /* GDGoogleDriveChunkedUploadOperation.m */,
 			);
-			path = Operations;
-			sourceTree = "<group>";
+			name = Operations;
+			path = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 		BFA9891217B7298B000B78F4 /* Operations */ = {
 			isa = PBXGroup;
@@ -932,8 +952,9 @@
 				BF7F568F17C0B3DE00D977B8 /* GDFileManagerPersistentUploadOperation_Private.h */,
 				BF7F568017C0A10300D977B8 /* GDFileManagerPersistentUploadOperation.m */,
 			);
-			path = Operations;
-			sourceTree = "<group>";
+			name = Operations;
+			path = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 		BFB7ED08178D6CBF003DEE44 /* NSOperation */ = {
 			isa = PBXGroup;
@@ -944,7 +965,7 @@
 				BF83757B178573CD0055ACF4 /* GDHTTPOperation.m */,
 			);
 			name = NSOperation;
-			path = Source/NSOperation;
+			path = Source;
 			sourceTree = "<group>";
 		};
 		BFB7ED09178D6CC9003DEE44 /* GCD utilities */ = {
@@ -957,7 +978,7 @@
 				BFE13B9517E4F0CE008F7ABC /* GDMultiMap.m */,
 			);
 			name = "GCD utilities";
-			path = "Source/GCD Utilities";
+			path = Source;
 			sourceTree = "<group>";
 		};
 		BFB7ED0B178ED2B6003DEE44 /* Credential manager */ = {
@@ -974,7 +995,7 @@
 				BF5456AD16B37B78005E4715 /* GDClientCredential.m */,
 			);
 			name = "Credential manager";
-			path = "Source/Credential manager";
+			path = Source;
 			sourceTree = "<group>";
 		};
 		BFBA948417ADD876008265DB /* Operations */ = {
@@ -983,7 +1004,7 @@
 				BFBA948517ADD898008265DB /* GDDropboxChunkedUploadOperation.h */,
 				BFBA948617ADD898008265DB /* GDDropboxChunkedUploadOperation.m */,
 			);
-			path = Operations;
+			name = Operations;
 			sourceTree = "<group>";
 		};
 		BFBCD68517977AC700305B86 /* CoreData cache */ = {
@@ -1030,8 +1051,9 @@
 				BFCA229916B509710015B1BF /* GDDropboxFileServiceSession.h */,
 				BFCA229A16B509710015B1BF /* GDDropboxFileServiceSession.m */,
 			);
-			path = Dropbox;
-			sourceTree = "<group>";
+			name = Dropbox;
+			path = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 		BFC2FED016BFAB9B00A1041F /* WebDAV */ = {
 			isa = PBXGroup;
@@ -1043,8 +1065,9 @@
 				BFC2FEDB16C06D5200A1041F /* GDWebDAVFileServiceSession.h */,
 				BFC2FEDC16C06D5200A1041F /* GDWebDAVFileServiceSession.m */,
 			);
-			path = WebDAV;
-			sourceTree = "<group>";
+			name = WebDAV;
+			path = Source;
+			sourceTree = SOURCE_ROOT;
 		};
 		BFC380E016B0CB92005E6729 /* Controller */ = {
 			isa = PBXGroup;
@@ -1054,7 +1077,7 @@
 				BFD22F0116AF873500BC5CB8 /* GDDropboxClient.h */,
 				BFD22F0216AF873500BC5CB8 /* GDDropboxClient.m */,
 			);
-			path = Controller;
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		BFCA22A516B521190015B1BF /* SugarSync */ = {
@@ -1066,7 +1089,7 @@
 				BFCA22AD16B523F60015B1BF /* Controller */,
 				BF65BD3D16AB5D9800B94AEF /* Resources */,
 			);
-			path = SugarSync;
+			name = SugarSync;
 			sourceTree = "<group>";
 		};
 		BFCA22AD16B523F60015B1BF /* Controller */ = {
@@ -1077,7 +1100,7 @@
 				BFCA22AF16B5259C0015B1BF /* GDSugarSyncClient.h */,
 				BFCA22B016B5259C0015B1BF /* GDSugarSyncClient.m */,
 			);
-			path = Controller;
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		BFD22F0016AF871C00BC5CB8 /* Dropbox */ = {
@@ -1089,7 +1112,7 @@
 				BFC380E016B0CB92005E6729 /* Controller */,
 				BF2006D716E2008A0082510E /* Resources */,
 			);
-			path = Dropbox;
+			name = Dropbox;
 			sourceTree = "<group>";
 		};
 		BFD22F0416AF89A400BC5CB8 /* API Clients */ = {
@@ -1110,7 +1133,7 @@
 				BF028B781778659800843D0E /* Google Drive */,
 			);
 			name = "API Clients";
-			path = "Source/API Clients";
+			path = Source;
 			sourceTree = "<group>";
 		};
 		BFD22F1416AFA3C200BC5CB8 /* Model */ = {
@@ -1128,7 +1151,7 @@
 				BF2E8C2B17ACE79C00901951 /* GDDropboxUploadState.h */,
 				BF2E8C2C17ACE79C00901951 /* GDDropboxUploadState.m */,
 			);
-			path = Model;
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1159,7 +1182,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = GD;
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Graham Dennis";
 			};
 			buildConfigurationList = BF38B579169BD56600EEA24D /* Build configuration list for PBXProject "GDFileManagerExample" */;
@@ -1423,6 +1446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1453,6 +1477,7 @@
 		};
 		BF38B5BF169BD56600EEA24D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B40AFA4830B4DBC9DC04C73 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GDFileManagerExample/GDFileManagerExample-Prefix.pch";
@@ -1464,6 +1489,7 @@
 		};
 		BF38B5C0169BD56600EEA24D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B40AFA4830B4DBC9DC04C73 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GDFileManagerExample/GDFileManagerExample-Prefix.pch";
