@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "GDFileManagerKit"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A consistent iOS API for cloud file storage services including Dropbox and Google Drive."
 
   s.description  = <<-DESC
