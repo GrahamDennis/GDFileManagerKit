@@ -96,11 +96,14 @@ NSString *const GDFileManagerNewCacheFileNotification = @"GDFileManagerNewCacheF
 - (NSURL *)cacheURLForURL:(NSURL *)url versionIdentifier:(NSString *)versionIdentifier cachedMetadata:(__autoreleasing id<GDURLMetadata> *)cachedMetadata
 {
     NSParameterAssert(url);
+    NSString *absoluteURLString = [url absoluteString];
+    if ([absoluteURLString length] == 0) return nil;
+    
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     fetchRequest.entity = [GDFileManagerCachedFile entityInManagedObjectContext:self.managedObjectContext];
     
     NSDictionary *substitutions = [NSDictionary dictionaryWithObjectsAndKeys:
-                                   [url absoluteString], GDFileManagerCachedFileAttributes.sourceURLString,
+                                   absoluteURLString, GDFileManagerCachedFileAttributes.sourceURLString,
                                    versionIdentifier, GDFileManagerCachedFileAttributes.versionIdentifier,
                                    nil];
     
