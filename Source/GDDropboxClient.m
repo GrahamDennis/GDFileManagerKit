@@ -261,6 +261,13 @@
                                                 NSDictionary *httpHeaders = [[requestOperation response] allHeaderFields];
                                                 NSString *metadataString = httpHeaders[@"X-Dropbox-Metadata"];
                                                 NSData *metadataData = [metadataString dataUsingEncoding:NSUTF8StringEncoding];
+                                                if (!metadataData) {
+                                                    NSLog(@"Unable to convert string '%@' into data!", metadataString);
+                                                    if (failure) {
+                                                        failure([NSError errorWithDomain:@"JSONErrorDomain" code:1 userInfo:@{NSLocalizedDescriptionKey: [NSString stringWithFormat:@"Unable to convert string '%@' into data!", metadataString]}]);
+                                                        return;
+                                                    }
+                                                }
                                                 NSError *jsonError = nil;
                                                 NSDictionary *metadataDictionary = [NSJSONSerialization JSONObjectWithData:metadataData options:0 error:&jsonError];
                                                 GDDropboxMetadata *metadata = nil;
