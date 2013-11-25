@@ -225,6 +225,8 @@
 {
     NSString *unicodeNormalisedPath = [path precomposedStringWithCanonicalMapping];
     NSString *lowercaseURLEscapedPath = [[unicodeNormalisedPath stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding] lowercaseString];
+    lowercaseURLEscapedPath = [lowercaseURLEscapedPath stringByReplacingOccurrencesOfString:@";" withString:@"%3b"];
+    lowercaseURLEscapedPath = [lowercaseURLEscapedPath stringByReplacingOccurrencesOfString:@"?" withString:@"%3f"];
     return [self canonicalURLForURL:[[NSURL URLWithString:lowercaseURLEscapedPath relativeToURL:self.baseURL] absoluteURL]];
 }
 
