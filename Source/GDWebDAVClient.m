@@ -134,7 +134,12 @@
                                          NSString *username = usernameTextField.text;
                                          NSString *password = passwordTextField.text;
                                          
+                                         GDWebDAVCredential *oldCredential = self.credential;
                                          self.credential = [[GDWebDAVCredential alloc] initWithUsername:username password:password serverURL:self.baseURL];
+                                         
+                                         // Replace the old credential with the new one.
+                                         [self.clientManager removeCredential:oldCredential];
+                                         [self.clientManager addCredential:self.credential];
                                          
                                          NSURLCredential *urlCredential = [NSURLCredential credentialWithUser:username password:password persistence:NSURLCredentialPersistencePermanent];
                                          [[challenge sender] useCredential:urlCredential forAuthenticationChallenge:challenge];
