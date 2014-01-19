@@ -20,7 +20,7 @@
 #import "GDFileManagerCachedDownloadOperation.h"
 #import "GDFileManagerUploadOperation.h"
 
-NSString *const GDFileManagerErrorDomain;
+extern NSString *const GDFileManagerErrorDomain;
 
 @class GDFileServiceManager;
 @class GDFileManagerAlias;
