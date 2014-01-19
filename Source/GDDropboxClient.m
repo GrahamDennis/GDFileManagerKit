@@ -109,7 +109,12 @@
 
 - (void)getMetadataForPath:(NSString *)path withParameters:(NSDictionary *)parameters success:(void (^)(GDDropboxMetadata *metadata))success failure:(void (^)(NSError *error))failure
 {
-    NSString *requestPath = [[NSString stringWithFormat:@"/1/metadata/%@%@", self.root, path] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString *requestPath = ({
+        NSURL *baseURL = [NSURL URLWithString:@"/1/metadata"];
+        NSURL *baseURLWithRoot = [baseURL URLByAppendingPathComponent:self.root];
+        NSURL *fullURL = [baseURLWithRoot URLByAppendingPathComponent:path];
+        [fullURL absoluteString];
+    });
     
     [self enqueueDropboxRequestOperationWithMethod:@"GET" path:requestPath parameters:parameters
                                            success:^(id json) {
@@ -155,7 +160,12 @@
                           success:(void (^)(NSArray *versionHistory))success
                           failure:(void (^)(NSError *error))failure
 {
-    NSString *requestPath = [[NSString stringWithFormat:@"/1/revisions/%@%@", self.root, dropboxPath] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString *requestPath = ({
+        NSURL *baseURL = [NSURL URLWithString:@"/1/revisions"];
+        NSURL *baseURLWithRoot = [baseURL URLByAppendingPathComponent:self.root];
+        NSURL *fullURL = [baseURLWithRoot URLByAppendingPathComponent:dropboxPath];
+        [fullURL absoluteString];
+    });
     
     [self enqueueDropboxRequestOperationWithMethod:@"GET" path:requestPath parameters:nil
                                            success:^(id json) {
@@ -248,7 +258,12 @@
                                  success:(void (^)(NSString *localPath, GDDropboxMetadata *metadata))success
                                  failure:(void (^)(NSError *error))failure
 {
-    NSString *path = [[NSString stringWithFormat:@"https://api-content.dropbox.com/1/files/%@%@", self.root, dropboxPath] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSString *path = ({
+        NSURL *baseURL = [NSURL URLWithString:@"https://api-content.dropbox.com/1/files/"];
+        NSURL *baseWithRoot = [baseURL URLByAppendingPathComponent:self.root];
+        NSURL *fullURL = [baseWithRoot URLByAppendingPathComponent:dropboxPath];
+        [fullURL absoluteString];
+    });
     
     NSMutableURLRequest *urlRequest = [self requestWithMethod:@"GET" path:path parameters:parameters];
     NSOutputStream *outputStream = [NSOutputStream outputStreamToFileAtPath:localPath append:NO];
