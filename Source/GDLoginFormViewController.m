@@ -9,7 +9,7 @@
 #import "GDLoginFormViewController.h"
 #import <QuickDialog/QuickDialogController+Loading.h>
 
-@interface GDLoginFormViewController () <QuickDialogStyleProvider>
+@interface GDLoginFormViewController ()
 
 - (IBAction)cancelTapped:(id)sender;
 
@@ -32,7 +32,6 @@
 //    self.quickDialogTableView.backgroundView = nil;
 //    self.quickDialogTableView.backgroundColor = [UIColor whiteColor];
     self.quickDialogTableView.bounces = YES;
-    self.quickDialogTableView.styleProvider = self;
     self.resizeWhenKeyboardPresented = NO;
 
     
@@ -64,14 +63,6 @@ loopEnd:;
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
 //    self.navigationController.navigationBar.tintColor = nil;
-}
-
--(void) cell:(UITableViewCell *)cell willAppearForElement:(QElement *)element atIndexPath:(NSIndexPath *)indexPath{
-//    cell.backgroundColor = [UIColor colorWithRed:0.9582 green:0.9104 blue:0.7991 alpha:1.0000];
-//    
-//    if ([element isKindOfClass:[QEntryElement class]] || [element isKindOfClass:[QButtonElement class]]){
-//        cell.textLabel.textColor = [UIColor colorWithRed:0.6033 green:0.2323 blue:0.0000 alpha:1.0000];
-//    }
 }
 
 #pragma mark - Action methods

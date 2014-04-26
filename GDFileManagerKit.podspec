@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
   s.author       = { "Graham Dennis" => "graham@grahamdennis.me" }
 
-  s.platform     = :ios, "5.0"
+  s.platform     = :ios, "7.0"
 
   s.source       = { :git => "https://github.com/GrahamDennis/GDFileManagerKit.git", :tag => s.version.to_s }
   s.source_files  = 'Source/**/*.{h,m}'
@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
   s.dependency 'UIAlertView-Blocks'
   s.dependency 'AFKissXMLRequestOperation'
   s.dependency 'ISO8601DateFormatter'
-  s.dependency 'QuickDialog', '0.8'
+  s.dependency 'QuickDialog'
   s.dependency 'AFOAuth2Client'
 	s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
 
