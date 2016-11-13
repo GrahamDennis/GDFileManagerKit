@@ -205,6 +205,9 @@ static NSArray *GDLocalFileServiceSessionURLKeys;
     NSURL *destinationLocalURL = [self fileURLFromCanonicalURL:destinationURL];
     
     NSError *error = nil;
+    // First delete the destination if it exists.
+    [self.fileManager removeItemAtURL:destinationLocalURL error:NULL];
+    
     if (![self.fileManager copyItemAtURL:localURL toURL:destinationLocalURL error:&error]) {
         if (failure) failure(error);
         return trivialOperation;

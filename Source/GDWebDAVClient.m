@@ -423,7 +423,7 @@
 - (void)deleteChildOfXMLElement:(DDXMLElement *)rootElement withName:(NSString *)elementName
 {
     DDXMLElement *childElement = [rootElement elementForName:elementName];
-    [childElement delete:childElement];
+    [rootElement removeChildAtIndex:childElement.index];
 }
 
 - (NSString *)contentStringForElementWithName:(NSString *)elementName inXMLElement:(DDXMLElement *)rootElement
